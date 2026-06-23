@@ -1,0 +1,5 @@
+build_pages.py
+assets/includes/
+*.pyc
+__pycache__/
+.DS_Store
