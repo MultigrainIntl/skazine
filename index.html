@@ -4,608 +4,270 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SKAZINE — Ska, Rocksteady, 2 Tone, Ska-Punk</title>
-<meta name="description" content="SKAZINE covers ska, rocksteady, reggae, 2 Tone, and ska-punk. Artist profiles, show listings, scene reports, and culture for the community.">
-<meta property="og:title" content="SKAZINE — Independent Ska Editorial">
-<meta property="og:description" content="Ska, rocksteady, 2 Tone, and ska-punk. For the scene, by the scene.">
+<meta name="description" content="SKAZINE covers ska, rocksteady, reggae, 2 Tone, and ska-punk. Artist profiles, show listings, playlists, and scene culture for bands, venues, fans, and sponsors.">
+<meta property="og:title" content="SKAZINE — The beat that keeps picking it up">
+<meta property="og:description" content="A premium ska, rocksteady, reggae, 2 Tone, and ska-punk music platform for fans, bands, venues, writers, and sponsors.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://multigrainintl.github.io/skazine/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://multigrainintl.github.io/skazine/">
 <link rel="stylesheet" href="assets/css/main.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"SKAZINE","url":"https://multigrainintl.github.io/skazine/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"SKAZINE","url":"https://multigrainintl.github.io/skazine/","description":"Ska, rocksteady, reggae, 2 Tone, and ska-punk music platform."}</script>
+<style>
+/* ============================================================
+   SKAZINE homepage rescue layer
+   Purpose: establish premium editorial / poster design language
+   without disturbing deeper static pages yet.
+   ============================================================ */
+:root{
+  --sk-ink:#070706;
+  --sk-ink-2:#0f0f0c;
+  --sk-ink-3:#191913;
+  --sk-paper:#f3efe2;
+  --sk-paper-2:#dfd5bf;
+  --sk-gold:#c59a3a;
+  --sk-red:#ad392f;
+  --sk-olive:#6f7650;
+  --sk-muted:rgba(243,239,226,.64);
+  --sk-line:rgba(243,239,226,.16);
+  --sk-wide:1240px;
+  --sk-display:Impact,Haettenschweiler,'Arial Narrow Bold','Arial Narrow',sans-serif;
+  --sk-body:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+html{scroll-behavior:smooth}
+body.sk-home{
+  margin:0;background:var(--sk-ink);color:var(--sk-paper);font-family:var(--sk-body);overflow-x:hidden;
+  background-image:radial-gradient(circle at 20% 0%,rgba(197,154,58,.13),transparent 25rem),radial-gradient(circle at 90% 10%,rgba(173,57,47,.12),transparent 22rem),linear-gradient(180deg,#070706 0%,#10100d 50%,#070706 100%);
+}
+body.sk-home *{box-sizing:border-box}
+body.sk-home a{color:inherit;text-decoration:none}
+body.sk-home img{max-width:100%;display:block}
+.sk-grain{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.12;background-image:repeating-radial-gradient(circle at 0 0,rgba(255,255,255,.12) 0 1px,transparent 1px 4px);mix-blend-mode:overlay}
+.sk-page{position:relative;z-index:1}
+.sk-shell{max-width:var(--sk-wide);margin:0 auto;padding:0 clamp(20px,4vw,42px)}
+.sk-masthead{border-bottom:1px solid var(--sk-line);background:rgba(7,7,6,.92);backdrop-filter:blur(14px);position:sticky;top:0;z-index:20}
+.sk-masthead-inner{max-width:var(--sk-wide);margin:0 auto;padding:16px clamp(20px,4vw,42px);display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center}
+.sk-logo{font-family:var(--sk-display);font-size:clamp(2rem,4vw,4.8rem);line-height:.82;letter-spacing:.035em;color:var(--sk-paper);text-transform:uppercase;text-shadow:5px 5px 0 rgba(173,57,47,.45)}
+.sk-genre-line{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(243,239,226,.52);align-self:end;padding-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sk-nav{display:flex;gap:3px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.sk-nav a{font-weight:800;font-size:.73rem;text-transform:uppercase;letter-spacing:.12em;padding:8px 10px;color:rgba(243,239,226,.68);border:1px solid transparent}
+.sk-nav a:hover{color:var(--sk-paper);border-color:var(--sk-line)}
+.sk-nav .sk-nav-submit{background:var(--sk-gold);color:var(--sk-ink);padding:9px 14px}
+.sk-checker{height:12px;background-color:var(--sk-ink);background-image:linear-gradient(45deg,var(--sk-paper) 25%,transparent 25%),linear-gradient(-45deg,var(--sk-paper) 25%,transparent 25%),linear-gradient(45deg,transparent 75%,var(--sk-paper) 75%),linear-gradient(-45deg,transparent 75%,var(--sk-paper) 75%);background-size:24px 24px;background-position:0 0,0 12px,12px -12px,-12px 0;opacity:.82}
+.sk-hero{position:relative;min-height:calc(100vh - 88px);display:grid;align-items:stretch;border-bottom:1px solid var(--sk-line)}
+.sk-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,7,6,.96) 0%,rgba(7,7,6,.86) 43%,rgba(7,7,6,.18) 100%);z-index:1}
+.sk-hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.03fr) minmax(360px,.97fr);gap:34px;align-items:center;max-width:var(--sk-wide);margin:0 auto;padding:clamp(42px,7vw,88px) clamp(20px,4vw,42px)}
+.sk-kicker{display:inline-flex;align-items:center;gap:12px;color:var(--sk-gold);font-size:.76rem;font-weight:900;letter-spacing:.24em;text-transform:uppercase;margin-bottom:24px}
+.sk-kicker::before{content:"";width:42px;height:3px;background:var(--sk-gold)}
+.sk-h1{font-family:var(--sk-display);font-size:clamp(4.5rem,10.6vw,11.5rem);line-height:.78;letter-spacing:.012em;margin:0 0 28px;text-transform:uppercase;max-width:760px}
+.sk-h1 .gold{color:var(--sk-gold)}
+.sk-h1 .red-shadow{text-shadow:8px 8px 0 rgba(173,57,47,.55)}
+.sk-deck{font-size:clamp(1.05rem,1.4vw,1.32rem);line-height:1.58;color:rgba(243,239,226,.76);max-width:690px;margin:0 0 32px}
+.sk-cta-row{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 34px}
+.sk-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 22px;border:2px solid var(--sk-line);font-size:.78rem;font-weight:950;letter-spacing:.14em;text-transform:uppercase;transition:.18s ease;box-shadow:0 0 0 rgba(0,0,0,0)}
+.sk-btn.gold{background:var(--sk-gold);border-color:var(--sk-gold);color:var(--sk-ink)}
+.sk-btn.gold:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--sk-red)}
+.sk-btn.dark:hover{border-color:var(--sk-paper);background:rgba(243,239,226,.06)}
+.sk-signal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--sk-line);max-width:760px;background:rgba(15,15,12,.72)}
+.sk-signal div{padding:18px 18px;border-right:1px solid var(--sk-line)}
+.sk-signal div:last-child{border-right:0}
+.sk-signal strong{display:block;font-family:var(--sk-display);font-size:1.65rem;line-height:.9;color:var(--sk-paper);letter-spacing:.04em;text-transform:uppercase}
+.sk-signal span{display:block;margin-top:7px;font-size:.76rem;color:rgba(243,239,226,.52);line-height:1.35;text-transform:uppercase;letter-spacing:.1em;font-weight:800}
+.sk-poster-wrap{position:relative;min-height:600px;display:grid;place-items:center}
+.sk-poster{position:relative;width:min(100%,520px);aspect-ratio:0.78;background:#090908;border:1px solid rgba(243,239,226,.26);box-shadow:0 36px 90px rgba(0,0,0,.55),-18px 18px 0 rgba(197,154,58,.14),18px -18px 0 rgba(173,57,47,.18);overflow:hidden;transform:rotate(1.5deg)}
+.sk-poster::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 72% 70%,transparent 0 88px,rgba(197,154,58,.7) 90px 92px,transparent 94px),radial-gradient(circle at 72% 70%,transparent 0 130px,rgba(197,154,58,.55) 132px 135px,transparent 137px),linear-gradient(135deg,rgba(243,239,226,.92) 0 23%,transparent 23.4%),linear-gradient(28deg,transparent 0 56%,rgba(243,239,226,.9) 56.4% 77%,transparent 77.4%);opacity:1}
+.sk-poster::after{content:"";position:absolute;left:-10%;right:-10%;top:45%;height:36px;background:repeating-conic-gradient(var(--sk-paper) 0 25%,transparent 0 50%) 0/24px 24px;transform:rotate(-3deg);box-shadow:0 0 0 999px rgba(0,0,0,0)}
+.sk-poster-word{position:absolute;font-family:var(--sk-display);text-transform:uppercase;line-height:.8;letter-spacing:.04em}
+.sk-poster .ska{top:34px;left:30px;font-size:8rem;color:var(--sk-ink);z-index:2;transform:rotate(-4deg)}
+.sk-poster .live{bottom:146px;left:26px;font-size:3.8rem;color:var(--sk-paper);background:var(--sk-red);padding:8px 14px;z-index:3;transform:rotate(-2deg)}
+.sk-poster .scene{bottom:34px;left:28px;font-size:4.8rem;color:var(--sk-ink);z-index:2;transform:rotate(-3deg)}
+.sk-poster .pick{top:265px;right:22px;font-size:1.35rem;color:rgba(243,239,226,.65);letter-spacing:.22em;z-index:3;writing-mode:vertical-rl}
+.sk-record-dot{position:absolute;right:112px;bottom:126px;width:22px;height:22px;background:var(--sk-gold);border-radius:50%;z-index:3;box-shadow:0 0 0 22px rgba(7,7,6,.85),0 0 0 24px rgba(197,154,58,.65),0 0 0 58px rgba(7,7,6,.68),0 0 0 60px rgba(197,154,58,.38)}
+.sk-ribbon{position:absolute;top:24px;right:-50px;background:var(--sk-gold);color:var(--sk-ink);font-family:var(--sk-display);font-size:1.15rem;letter-spacing:.15em;padding:8px 58px;transform:rotate(32deg);z-index:4;text-transform:uppercase}
+.sk-section{padding:clamp(56px,7vw,104px) 0;border-bottom:1px solid var(--sk-line)}
+.sk-section.paper{background:var(--sk-paper);color:var(--sk-ink);border:0}
+.sk-section.ink2{background:rgba(15,15,12,.78)}
+.sk-section-head{display:flex;justify-content:space-between;align-items:end;gap:22px;margin-bottom:30px;border-bottom:2px solid currentColor;padding-bottom:14px}
+.sk-eyebrow{display:block;color:var(--sk-gold);font-size:.72rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin-bottom:8px}
+.paper .sk-eyebrow{color:var(--sk-red)}
+.sk-title{font-family:var(--sk-display);font-size:clamp(2.2rem,5vw,5.5rem);line-height:.83;text-transform:uppercase;letter-spacing:.025em;margin:0}.sk-title.small{font-size:clamp(2rem,3.3vw,3.6rem)}
+.sk-link{font-size:.75rem;font-weight:950;text-transform:uppercase;letter-spacing:.14em;color:var(--sk-gold);white-space:nowrap}.paper .sk-link{color:var(--sk-red)}
+.sk-value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--sk-line);border:1px solid var(--sk-line)}
+.sk-value-card{background:var(--sk-ink-2);padding:30px;min-height:210px;position:relative;overflow:hidden}.sk-value-card::after{content:"";position:absolute;right:-32px;bottom:-32px;width:112px;height:112px;border:1px solid rgba(197,154,58,.26);border-radius:50%}
+.sk-value-card b{display:block;font-family:var(--sk-display);font-size:2.5rem;line-height:.9;text-transform:uppercase;color:var(--sk-paper);margin:0 0 18px}.sk-value-card p{color:rgba(243,239,226,.62);line-height:1.65;margin:0}.sk-value-card span{display:inline-block;margin-bottom:12px;color:var(--sk-gold);font-size:.72rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase}
+.sk-feature{display:grid;grid-template-columns:1.05fr .95fr;min-height:520px;border:1px solid var(--sk-line);background:var(--sk-ink-2);box-shadow:0 24px 80px rgba(0,0,0,.24)}
+.sk-feature-art{position:relative;overflow:hidden;background:var(--sk-ink)}
+.sk-feature-art::before{content:"";position:absolute;inset:0;background:linear-gradient(140deg,rgba(173,57,47,.86) 0 31%,transparent 31.4%),linear-gradient(20deg,transparent 0 44%,rgba(243,239,226,.9) 44.4% 66%,transparent 66.4%),radial-gradient(circle at 70% 66%,#070706 0 78px,var(--sk-gold) 80px 82px,#070706 84px 118px,var(--sk-gold) 120px 122px,transparent 124px),repeating-linear-gradient(90deg,rgba(243,239,226,.07) 0 1px,transparent 1px 12px)}
+.sk-feature-art::after{content:"TWO TONE\A ROOTS";white-space:pre;position:absolute;left:34px;bottom:34px;font-family:var(--sk-display);font-size:clamp(4rem,8vw,7rem);line-height:.78;color:var(--sk-paper);text-shadow:7px 7px 0 rgba(7,7,6,.42)}
+.sk-feature-body{padding:clamp(34px,5vw,62px);display:flex;flex-direction:column;justify-content:space-between}.sk-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.sk-tag{border:1px solid var(--sk-line);padding:5px 9px;font-size:.68rem;text-transform:uppercase;letter-spacing:.16em;font-weight:900;color:rgba(243,239,226,.74)}.sk-tag.red{background:var(--sk-red);border-color:var(--sk-red);color:#fff}.sk-tag.gold{border-color:var(--sk-gold);color:var(--sk-gold)}
+.sk-feature h2{font-family:var(--sk-display);font-size:clamp(3rem,6vw,6.2rem);line-height:.83;text-transform:uppercase;margin:0 0 20px}.sk-feature p{font-size:1.04rem;line-height:1.78;color:rgba(243,239,226,.64);max-width:580px}.sk-feature .sk-btn{align-self:flex-start;margin-top:30px}
+.sk-artist-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.sk-artist-card{position:relative;min-height:390px;background:var(--sk-paper);color:var(--sk-ink);padding:24px;overflow:hidden;border:1px solid rgba(7,7,6,.18);display:flex;flex-direction:column;justify-content:space-between;box-shadow:10px 10px 0 rgba(7,7,6,.18)}.sk-artist-card:nth-child(2){background:#d9d1bc}.sk-artist-card:nth-child(3){background:#eee7d6}.sk-artist-art{height:150px;margin:-24px -24px 24px;position:relative;background:var(--sk-ink)}.sk-artist-art::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,transparent 0 34px,var(--sk-gold) 35px 37px,transparent 38px),linear-gradient(135deg,rgba(173,57,47,.8) 0 36%,transparent 36.5%),repeating-conic-gradient(var(--sk-paper) 0 25%,transparent 0 50%) 0/28px 28px;opacity:.95}.sk-artist-card h3{font-family:var(--sk-display);font-size:3rem;line-height:.86;text-transform:uppercase;margin:0 0 14px}.sk-artist-card p{line-height:1.58;color:rgba(7,7,6,.72);margin:0 0 18px}.sk-meta-line{font-size:.7rem;text-transform:uppercase;letter-spacing:.16em;font-weight:950;color:var(--sk-red);margin-bottom:12px}.sk-card-link{font-size:.74rem;font-weight:950;letter-spacing:.14em;text-transform:uppercase;color:var(--sk-ink)}
+.sk-show-list{border-top:1px solid rgba(7,7,6,.25)}.sk-show{display:grid;grid-template-columns:120px 1fr auto;gap:22px;align-items:center;padding:22px 0;border-bottom:1px solid rgba(7,7,6,.18)}.sk-date{border:2px solid var(--sk-ink);padding:12px 10px;text-align:center;min-width:96px;background:var(--sk-ink);color:var(--sk-paper);box-shadow:5px 5px 0 var(--sk-red)}.sk-date span{display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:950;color:var(--sk-gold)}.sk-date b{font-family:var(--sk-display);font-size:3rem;line-height:.86}.sk-show h3{font-family:var(--sk-display);font-size:clamp(2rem,3vw,3.4rem);line-height:.9;text-transform:uppercase;margin:0 0 8px}.sk-show p{margin:0;color:rgba(7,7,6,.68);font-weight:650}.sk-show .sk-btn{border-color:rgba(7,7,6,.24);color:var(--sk-ink)}
+.sk-play-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.sk-play{min-height:330px;padding:24px;position:relative;overflow:hidden;background:var(--sk-ink-2);border:1px solid var(--sk-line);display:flex;flex-direction:column;justify-content:space-between}.sk-play::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(243,239,226,.88) 0 30%,transparent 30.5%),radial-gradient(circle at 75% 35%,#070706 0 50px,var(--sk-gold) 52px 54px,#070706 56px 85px,var(--sk-gold) 87px 89px,transparent 91px);opacity:.95}.sk-play:nth-child(2)::before{background:linear-gradient(140deg,rgba(173,57,47,.82) 0 34%,transparent 34.5%),radial-gradient(circle at 75% 35%,#070706 0 50px,var(--sk-paper) 52px 54px,#070706 56px 85px,var(--sk-paper) 87px 89px,transparent 91px)}.sk-play:nth-child(3)::before{background:linear-gradient(140deg,rgba(197,154,58,.82) 0 34%,transparent 34.5%),radial-gradient(circle at 75% 35%,#070706 0 50px,var(--sk-red) 52px 54px,#070706 56px 85px,var(--sk-red) 87px 89px,transparent 91px)}.sk-play>*{position:relative;z-index:2}.sk-play h3{font-family:var(--sk-display);font-size:3.3rem;line-height:.86;text-transform:uppercase;margin:0}.sk-play p{color:rgba(243,239,226,.66);line-height:1.6;margin:0}.sk-play .sk-tag{align-self:flex-start;background:var(--sk-ink);color:var(--sk-paper)}
+.sk-partner{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;background:var(--sk-red);padding:clamp(30px,5vw,54px);border:1px solid rgba(243,239,226,.2);box-shadow:12px 12px 0 rgba(197,154,58,.18)}.sk-partner h2{font-family:var(--sk-display);font-size:clamp(3rem,6vw,6.5rem);line-height:.82;text-transform:uppercase;margin:0 0 16px}.sk-partner p{font-size:1.05rem;line-height:1.65;max-width:720px;color:rgba(255,255,255,.78);margin:0}.sk-partner-actions{display:flex;gap:12px;flex-wrap:wrap}.sk-news{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;border:1px solid var(--sk-line);padding:34px;background:rgba(243,239,226,.06)}.sk-news h2{font-family:var(--sk-display);font-size:clamp(2.5rem,5vw,5rem);line-height:.86;text-transform:uppercase;margin:0}.sk-news p{color:rgba(243,239,226,.64);margin:10px 0 0}.sk-email{display:flex;min-width:min(420px,100%);border:1px solid var(--sk-line);background:var(--sk-ink)}.sk-email input{flex:1;min-width:0;background:transparent;border:0;color:var(--sk-paper);padding:14px 16px;outline:0}.sk-email button{border:0;background:var(--sk-gold);color:var(--sk-ink);font-weight:950;letter-spacing:.12em;text-transform:uppercase;padding:0 18px}.sk-footer{padding:36px 0;color:rgba(243,239,226,.46);font-size:.82rem}.sk-footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--sk-line);padding-top:22px}.sk-footer b{font-family:var(--sk-display);font-size:1.8rem;color:var(--sk-paper);letter-spacing:.04em}.sk-footer a{color:rgba(243,239,226,.72);margin-left:12px}
+@media(max-width:980px){.sk-masthead-inner{grid-template-columns:1fr;gap:10px}.sk-genre-line{white-space:normal}.sk-nav{justify-content:flex-start}.sk-hero-grid{grid-template-columns:1fr;padding-top:42px}.sk-hero::before{background:linear-gradient(180deg,rgba(7,7,6,.96) 0%,rgba(7,7,6,.88) 56%,rgba(7,7,6,.2) 100%)}.sk-poster-wrap{min-height:480px}.sk-poster{width:min(92vw,460px)}.sk-signal,.sk-value-grid,.sk-feature,.sk-artist-grid,.sk-play-grid,.sk-partner,.sk-news{grid-template-columns:1fr}.sk-show{grid-template-columns:96px 1fr}.sk-show .sk-btn{grid-column:2;justify-self:start}.sk-news .sk-email{min-width:0}}
+@media(max-width:620px){.sk-logo{font-size:3.1rem}.sk-nav a{font-size:.66rem;padding:7px 7px}.sk-h1{font-size:4.15rem}.sk-signal{display:none}.sk-poster-wrap{min-height:390px}.sk-poster .ska{font-size:6.2rem}.sk-poster .live{font-size:2.6rem}.sk-poster .scene{font-size:3.4rem}.sk-value-card,.sk-feature-body,.sk-artist-card{padding:22px}.sk-show{grid-template-columns:1fr;gap:12px}.sk-show .sk-btn{grid-column:auto}.sk-date{width:100px}.sk-section-head{display:block}.sk-link{display:inline-block;margin-top:14px}.sk-email{display:block}.sk-email button{width:100%;min-height:46px}.sk-cta-row .sk-btn{width:100%}}
+</style>
 </head>
-<body>
-
-<!-- NAV -->
-<nav class="site-nav">
-  <div class="nav-wrap">
-    <div class="nav-brand">
-      <a href="./" class="nav-logo">SKAZINE</a>
-      <span class="nav-tagline">Ska · Rocksteady · Reggae · 2 Tone · Ska-Punk</span>
+<body class="sk-home">
+<div class="sk-grain"></div>
+<div class="sk-page">
+  <header class="sk-masthead">
+    <div class="sk-masthead-inner">
+      <a href="./" class="sk-logo" aria-label="SKAZINE home">SKAZINE</a>
+      <div class="sk-genre-line">Ska / Rocksteady / Reggae / 2 Tone / Ska-Punk</div>
+      <nav class="sk-nav" aria-label="Primary navigation">
+        <a href="articles/">Articles</a>
+        <a href="artists/">Artists</a>
+        <a href="shows/">Shows</a>
+        <a href="playlists/">Playlists</a>
+        <a href="partner/">Partner</a>
+        <a href="submit/" class="sk-nav-submit">Submit</a>
+      </nav>
     </div>
-    <button class="nav-toggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links">
-      <li><a href="articles/">Articles</a></li>
-      <li><a href="artists/">Artists</a></li>
-      <li><a href="shows/">Shows</a></li>
-      <li><a href="playlists/">Playlists</a></li>
-      <li><a href="partner/" class="n-partner">Partner</a></li>
-      <li><a href="submit/" class="n-submit">Submit</a></li>
-    </ul>
-  </div>
-</nav>
-<div class="checker-strip"></div>
+    <div class="sk-checker" aria-hidden="true"></div>
+  </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-wrap">
-    <!-- Text -->
-    <div class="hero-content">
-      <div class="hero-kicker">Est. 2025 · Independent Music Editorial</div>
-      <h1 class="hero-headline">
-        THE BEAT<br>THAT KEEPS<br><em>Picking It Up.</em>
-      </h1>
-      <p class="hero-sub">SKAZINE covers ska, rocksteady, reggae, 2 Tone, ska-punk, and the scenes that keep live music moving.</p>
-      <div class="hero-ctas">
-        <a href="submit/" class="btn btn-gold">Submit Music</a>
-        <a href="shows/" class="btn btn-outline">Explore Shows</a>
+  <main>
+    <section class="sk-hero">
+      <div class="sk-hero-grid">
+        <div class="sk-hero-copy">
+          <div class="sk-kicker">Independent music culture</div>
+          <h1 class="sk-h1"><span class="red-shadow">The beat</span><br>that keeps<br><span class="gold">picking it up.</span></h1>
+          <p class="sk-deck">SKAZINE covers ska, rocksteady, reggae, 2 Tone, ska-punk, and the scenes that keep live music moving.</p>
+          <div class="sk-cta-row">
+            <a href="submit/" class="sk-btn gold">Submit Music</a>
+            <a href="shows/" class="sk-btn dark">Explore Shows</a>
+          </div>
+          <div class="sk-signal" aria-label="SKAZINE platform signals">
+            <div><strong>Fans</strong><span>Discover bands, playlists, and scene history</span></div>
+            <div><strong>Bands</strong><span>Profiles, releases, shows, and press support</span></div>
+            <div><strong>Venues</strong><span>Event pages, calendars, and sponsor visibility</span></div>
+          </div>
+        </div>
+        <div class="sk-poster-wrap" aria-label="SKAZINE poster art">
+          <div class="sk-poster">
+            <div class="sk-ribbon">Dispatch</div>
+            <div class="sk-poster-word ska">SKA</div>
+            <div class="sk-poster-word live">LIVE</div>
+            <div class="sk-poster-word pick">PICK IT UP</div>
+            <div class="sk-poster-word scene">SCENE</div>
+            <div class="sk-record-dot"></div>
+          </div>
+        </div>
       </div>
-      <div class="hero-meta">
-        <div><div class="hero-stat-n">42</div><div class="hero-stat-l">Shows Listed</div></div>
-        <div><div class="hero-stat-n">200+</div><div class="hero-stat-l">Artist Profiles</div></div>
-        <div><div class="hero-stat-n">18</div><div class="hero-stat-l">Cities Covered</div></div>
+    </section>
+
+    <section class="sk-section ink2">
+      <div class="sk-shell">
+        <div class="sk-value-grid">
+          <article class="sk-value-card"><span>For fans</span><b>Find the room</b><p>Discover bands, playlists, local shows, genre history, and the people keeping the scene alive.</p></article>
+          <article class="sk-value-card"><span>For bands</span><b>Look bookable</b><p>Artist profiles, release visibility, show promotion, and press-kit support built for independent acts.</p></article>
+          <article class="sk-value-card"><span>For venues</span><b>Fill the night</b><p>Event pages, calendar visibility, sponsor-ready promotion, and better context around every show.</p></article>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Poster Graphic -->
-    <div class="hero-poster">
-      <svg viewBox="0 0 480 580" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-        <!-- Base black -->
-        <rect width="480" height="580" fill="#0a0a08"/>
-
-        <!-- Torn paper panels — off-white -->
-        <!-- Large angled panel top-right -->
-        <polygon points="200,0 480,0 480,220 240,180 180,60" fill="#e8e4d8" opacity="0.92"/>
-        <!-- Second torn panel bottom-left -->
-        <polygon points="0,310 160,290 220,580 0,580" fill="#e8e4d8" opacity="0.88"/>
-        <!-- Small accent panel mid -->
-        <polygon points="260,200 480,240 480,310 300,320 240,240" fill="#dbd6c6" opacity="0.6"/>
-
-        <!-- Checker strip accent — horizontal -->
-        <rect x="0" y="270" width="480" height="10" fill="none"/>
-        <!-- manual checker -->
-        <rect x="0"   y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="20"  y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="40"  y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="60"  y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="80"  y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="100" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="120" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="140" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="160" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="180" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="200" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="220" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="240" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="260" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="280" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="300" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="320" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="340" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="360" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="380" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="400" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="420" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="440" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="460" y="268" width="10" height="10" fill="#f0ede4"/>
-        <rect x="10"  y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="30"  y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="50"  y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="70"  y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="90"  y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="110" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="130" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="150" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="170" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="190" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="210" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="230" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="250" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="270" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="290" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="310" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="330" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="350" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="370" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="390" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="410" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="430" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="450" y="278" width="10" height="10" fill="#f0ede4"/>
-        <rect x="470" y="278" width="10" height="10" fill="#f0ede4"/>
-
-        <!-- Gold vinyl/record circle -->
-        <circle cx="320" cy="410" r="110" fill="#0a0a08" stroke="#c49a3c" stroke-width="2"/>
-        <circle cx="320" cy="410" r="88" fill="#111108" stroke="#c49a3c" stroke-width="1" opacity="0.7"/>
-        <circle cx="320" cy="410" r="66" fill="#0a0a08" stroke="#c49a3c" stroke-width="1" opacity="0.5"/>
-        <circle cx="320" cy="410" r="44" fill="#111108" stroke="#c49a3c" stroke-width="1" opacity="0.4"/>
-        <circle cx="320" cy="410" r="22" fill="#0a0a08" stroke="#c49a3c" stroke-width="1" opacity="0.6"/>
-        <circle cx="320" cy="410" r="8" fill="#c49a3c"/>
-        <!-- record grooves -->
-        <circle cx="320" cy="410" r="100" fill="none" stroke="#c49a3c" stroke-width="0.5" opacity="0.2"/>
-        <circle cx="320" cy="410" r="78" fill="none" stroke="#c49a3c" stroke-width="0.5" opacity="0.2"/>
-        <circle cx="320" cy="410" r="56" fill="none" stroke="#c49a3c" stroke-width="0.5" opacity="0.2"/>
-
-        <!-- Red poster block -->
-        <rect x="20" y="320" width="180" height="56" fill="#a83232"/>
-        <text x="30" y="358" fill="#f0ede4" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="34" letter-spacing="4">LIVE MUSIC</text>
-
-        <!-- Text fragments in the panels -->
-        <!-- SKA on white top panel -->
-        <text x="210" y="80" fill="#0c0c0a" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="72" letter-spacing="2" opacity="0.85">SKA</text>
-        <!-- SCENE on white bottom panel -->
-        <text x="12" y="560" fill="#0c0c0a" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="52" letter-spacing="2" opacity="0.7">SCENE</text>
-        <!-- PICK IT UP angled text -->
-        <text x="20" y="240" fill="#f0ede4" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="26" letter-spacing="3" opacity="0.4">PICK IT UP</text>
-        <!-- 2 TONE small -->
-        <text x="340" y="170" fill="#0c0c0a" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="22" letter-spacing="3" opacity="0.6">2 TONE</text>
-        <!-- SKAZINE watermark -->
-        <text x="240" y="580" fill="#f0ede4" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="16" letter-spacing="6" opacity="0.12">SKAZINE</text>
-
-        <!-- Thin registration marks / design intent lines -->
-        <line x1="0" y1="60" x2="40" y2="60" stroke="#c49a3c" stroke-width="1" opacity="0.4"/>
-        <line x1="440" y1="520" x2="480" y2="520" stroke="#c49a3c" stroke-width="1" opacity="0.4"/>
-        <line x1="0" y1="0" x2="0" y2="580" stroke="#c49a3c" stroke-width="1" opacity="0.15"/>
-      </svg>
-    </div>
-  </div>
-</section>
-
-<!-- VALUE STRIP -->
-<div style="max-width:var(--w);margin:0 auto;padding:0 28px">
-  <div class="value-strip">
-    <div class="value-block">
-      <div class="value-icon">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><circle cx="15" cy="15" r="12" stroke="#c49a3c" stroke-width="1.5"/><circle cx="15" cy="15" r="5" fill="#c49a3c" opacity="0.35"/><circle cx="15" cy="15" r="2.5" fill="#c49a3c"/></svg>
+    <section class="sk-section">
+      <div class="sk-shell">
+        <div class="sk-section-head">
+          <div><span class="sk-eyebrow">Featured story</span><h2 class="sk-title">Scene history with a pulse</h2></div>
+          <a href="articles/" class="sk-link">All articles →</a>
+        </div>
+        <a href="articles/two-tone-roots/" class="sk-feature">
+          <div class="sk-feature-art" aria-hidden="true"></div>
+          <div class="sk-feature-body">
+            <div>
+              <div class="sk-tags"><span class="sk-tag red">Feature</span><span class="sk-tag gold">History</span><span class="sk-tag">2 Tone</span></div>
+              <h2>The Roots of Two Tone</h2>
+              <p>How a working-class sound became a visual language, a dance floor movement, and a blueprint for scenes that still refuse to sit still.</p>
+            </div>
+            <span class="sk-btn dark">Read the feature</span>
+          </div>
+        </a>
       </div>
-      <span class="value-for">For Fans</span>
-      <div class="value-head">Discover the Scene</div>
-      <p class="value-body">Find bands, playlists, shows, and scene history across every era of ska and rocksteady.</p>
-    </div>
-    <div class="value-block">
-      <div class="value-icon">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><rect x="4" y="8" width="22" height="16" rx="1" stroke="#c49a3c" stroke-width="1.5"/><circle cx="15" cy="16" r="4" stroke="#c49a3c" stroke-width="1.5"/><path d="M11 8V6M19 8V6" stroke="#c49a3c" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </section>
+
+    <section class="sk-section paper">
+      <div class="sk-shell">
+        <div class="sk-section-head">
+          <div><span class="sk-eyebrow">Featured artists</span><h2 class="sk-title">Profiles that help bands move</h2></div>
+          <a href="artists/" class="sk-link">Artist directory →</a>
+        </div>
+        <div class="sk-artist-grid">
+          <article class="sk-artist-card">
+            <div><div class="sk-artist-art"></div><div class="sk-meta-line">Denver · ska-punk</div><h3>Checkline Collective</h3><p>Horn-led, hook-heavy ska-punk built for small rooms, big choruses, and sweaty Friday nights.</p></div>
+            <a href="artists/checkline-collective/" class="sk-card-link">View profile →</a>
+          </article>
+          <article class="sk-artist-card">
+            <div><div class="sk-artist-art"></div><div class="sk-meta-line">Los Angeles · rocksteady</div><h3>The Gold Steps</h3><p>Vintage organ textures, sharp rhythm guitar, and a throwback pulse built for modern dance floors.</p></div>
+            <a href="artists/" class="sk-card-link">Claim profile →</a>
+          </article>
+          <article class="sk-artist-card">
+            <div><div class="sk-artist-art"></div><div class="sk-meta-line">Chicago · 2 Tone</div><h3>Night Bus Rude</h3><p>Fast suits, faster backbeats, and a live show designed to turn browsers into believers.</p></div>
+            <a href="submit/" class="sk-card-link">Submit band →</a>
+          </article>
+        </div>
       </div>
-      <span class="value-for">For Bands</span>
-      <div class="value-head">Get Visibility</div>
-      <p class="value-body">Artist profiles, release coverage, show promotion, and press-kit support for independent acts.</p>
-    </div>
-    <div class="value-block">
-      <div class="value-icon">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M4 26V14L15 4L26 14V26" stroke="#c49a3c" stroke-width="1.5" stroke-linejoin="round"/><rect x="11" y="18" width="8" height="8" stroke="#c49a3c" stroke-width="1.5"/></svg>
+    </section>
+
+    <section class="sk-section paper" style="padding-top:0">
+      <div class="sk-shell">
+        <div class="sk-section-head">
+          <div><span class="sk-eyebrow">Upcoming shows</span><h2 class="sk-title small">A calendar built for discovery</h2></div>
+          <a href="shows/" class="sk-link">Explore shows →</a>
+        </div>
+        <div class="sk-show-list">
+          <article class="sk-show"><div class="sk-date"><span>Jul</span><b>18</b></div><div><h3>Checkline Collective at Hi-Dive</h3><p>Denver, CO · with The Select Few and Westbound Brass</p></div><a href="shows/" class="sk-btn">Show page</a></article>
+          <article class="sk-show"><div class="sk-date"><span>Aug</span><b>02</b></div><div><h3>Rocksteady Night Market</h3><p>Los Angeles, CA · DJs, vinyl vendors, food trucks, and late sets</p></div><a href="shows/" class="sk-btn">Boost show</a></article>
+          <article class="sk-show"><div class="sk-date"><span>Aug</span><b>16</b></div><div><h3>Two Tone Weekender</h3><p>Chicago, IL · three rooms, twelve bands, one all-night floor</p></div><a href="submit/" class="sk-btn">Submit event</a></article>
+        </div>
       </div>
-      <span class="value-for">For Venues</span>
-      <div class="value-head">Fill the Room</div>
-      <p class="value-body">Event pages, calendar visibility, and sponsor-ready promotion for clubs and stages.</p>
+    </section>
+
+    <section class="sk-section">
+      <div class="sk-shell">
+        <div class="sk-section-head">
+          <div><span class="sk-eyebrow">Playlist spotlight</span><h2 class="sk-title">Record sleeves for the algorithm age</h2></div>
+          <a href="playlists/" class="sk-link">All playlists →</a>
+        </div>
+        <div class="sk-play-grid">
+          <article class="sk-play"><span class="sk-tag">Classics</span><h3>Ska Classics</h3><p>Foundation tracks, rude-boy staples, and the songs every new listener should hear first.</p></article>
+          <article class="sk-play"><span class="sk-tag">Rocksteady</span><h3>Rocksteady Selections</h3><p>Warm basslines, sweet vocals, and late-night grooves from then to now.</p></article>
+          <article class="sk-play"><span class="sk-tag">Ska-punk</span><h3>Ska-Punk Anthems</h3><p>Fast tempos, brass punches, and sing-along hooks for the pit and the van.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sk-section ink2">
+      <div class="sk-shell">
+        <div class="sk-partner">
+          <div><h2>Build the scene with us.</h2><p>Bands, venues, festivals, labels, and sponsors can use SKAZINE for artist profiles, show boosts, release visibility, newsletter sponsorship, and scene-level promotion.</p></div>
+          <div class="sk-partner-actions"><a href="partner/" class="sk-btn gold">Partner with SKAZINE</a><a href="submit/" class="sk-btn dark">Submit a project</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sk-section">
+      <div class="sk-shell">
+        <div class="sk-news">
+          <div><span class="sk-eyebrow">Newsletter</span><h2>Get the SKAZINE Dispatch.</h2><p>New releases, shows, playlists, and scene notes. MVP preview: signup is not live yet.</p></div>
+          <form class="sk-email" onsubmit="event.preventDefault();alert('MVP preview — newsletter signup is not live yet.');">
+            <input type="email" placeholder="email@example.com" aria-label="Email address">
+            <button type="submit">Notify me</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sk-footer">
+    <div class="sk-shell sk-footer-inner">
+      <div><b>SKAZINE</b><br>Static MVP preview. No DNS changes. No CMS yet.</div>
+      <div><a href="about/">About</a><a href="partner/">Partner</a><a href="submit/">Submit</a></div>
     </div>
-  </div>
+  </footer>
 </div>
-
-<!-- FEATURED STORY -->
-<section class="section">
-  <div class="s-inner">
-    <div class="s-header">
-      <div><span class="s-eyebrow">Featured Story</span><div class="s-title">From the Archive</div></div>
-      <a href="articles/" class="btn btn-outline btn-sm">All Articles →</a>
-    </div>
-    <a href="articles/two-tone-roots/" style="display:block">
-      <div class="feature-card">
-        <div class="feature-visual">
-          <!-- Editorial feature graphic: 2 Tone poster-style -->
-          <svg viewBox="0 0 560 400" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%">
-            <rect width="560" height="400" fill="#111108"/>
-            <!-- Checker top band -->
-            <rect x="0"   y="0" width="40" height="40" fill="#f0ede4"/>
-            <rect x="80"  y="0" width="40" height="40" fill="#f0ede4"/>
-            <rect x="160" y="0" width="40" height="40" fill="#f0ede4"/>
-            <rect x="240" y="0" width="40" height="40" fill="#f0ede4"/>
-            <rect x="320" y="0" width="40" height="40" fill="#f0ede4"/>
-            <rect x="400" y="0" width="40" height="40" fill="#f0ede4"/>
-            <rect x="480" y="0" width="40" height="40" fill="#f0ede4"/>
-            <rect x="40"  y="0" width="40" height="40" fill="#0c0c0a"/>
-            <rect x="120" y="0" width="40" height="40" fill="#0c0c0a"/>
-            <rect x="200" y="0" width="40" height="40" fill="#0c0c0a"/>
-            <rect x="280" y="0" width="40" height="40" fill="#0c0c0a"/>
-            <rect x="360" y="0" width="40" height="40" fill="#0c0c0a"/>
-            <rect x="440" y="0" width="40" height="40" fill="#0c0c0a"/>
-            <rect x="520" y="0" width="40" height="40" fill="#0c0c0a"/>
-            <!-- second row -->
-            <rect x="40"  y="40" width="40" height="40" fill="#f0ede4"/>
-            <rect x="120" y="40" width="40" height="40" fill="#f0ede4"/>
-            <rect x="200" y="40" width="40" height="40" fill="#f0ede4"/>
-            <rect x="280" y="40" width="40" height="40" fill="#f0ede4"/>
-            <rect x="360" y="40" width="40" height="40" fill="#f0ede4"/>
-            <rect x="440" y="40" width="40" height="40" fill="#f0ede4"/>
-            <rect x="0"   y="40" width="40" height="40" fill="#0c0c0a"/>
-            <rect x="80"  y="40" width="40" height="40" fill="#0c0c0a"/>
-            <rect x="160" y="40" width="40" height="40" fill="#0c0c0a"/>
-            <rect x="240" y="40" width="40" height="40" fill="#0c0c0a"/>
-            <rect x="320" y="40" width="40" height="40" fill="#0c0c0a"/>
-            <rect x="400" y="40" width="40" height="40" fill="#0c0c0a"/>
-            <rect x="480" y="40" width="40" height="40" fill="#0c0c0a"/>
-            <!-- Red block -->
-            <rect x="0" y="80" width="560" height="60" fill="#a83232"/>
-            <text x="28" y="126" fill="#f0ede4" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="46" letter-spacing="4">2 TONE RECORDS</text>
-            <!-- Large headline text -->
-            <text x="28" y="230" fill="#f0ede4" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="72" letter-spacing="0">COVENTRY</text>
-            <text x="28" y="305" fill="#c49a3c" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="72" letter-spacing="0">1979</text>
-            <!-- Thin lines -->
-            <line x1="0" y1="320" x2="560" y2="320" stroke="#f0ede4" stroke-width="1" opacity="0.15"/>
-            <text x="28" y="360" fill="#f0ede4" font-family="sans-serif" font-size="13" opacity="0.45" letter-spacing="1">THE SPECIALS · MADNESS · THE SELECTER · THE BEAT</text>
-          </svg>
-        </div>
-        <div class="feature-body">
-          <div>
-            <div class="feature-labels">
-              <span class="label label-red">Feature</span>
-              <span class="label label-gold">History</span>
-            </div>
-            <h2 class="feature-title">The Roots of Two Tone: How Coventry Changed Everything</h2>
-            <p class="feature-excerpt">In 1979, a small label from Coventry fused Jamaican ska with British punk energy — and made a political statement about race and unity that echoes through music to this day.</p>
-            <span class="btn btn-gold btn-sm">Read Feature →</span>
-          </div>
-          <div class="feature-byline">SKAZINE Editorial · June 2025 · 8 min read</div>
-        </div>
-      </div>
-    </a>
-  </div>
-</section>
-
-<!-- FEATURED ARTISTS -->
-<section class="section s-dark">
-  <div class="s-inner">
-    <div class="s-header">
-      <div><span class="s-eyebrow">Artist Spotlight</span><div class="s-title">Acts to Know</div></div>
-      <a href="artists/" class="btn btn-outline btn-sm">All Artists →</a>
-    </div>
-    <div class="artist-grid">
-
-      <!-- Artist 1 -->
-      <a href="artists/checkline-collective/">
-        <div class="artist-card">
-          <div class="artist-visual">
-            <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
-              <rect width="400" height="300" fill="#1a1a14"/>
-              <rect x="0" y="0" width="400" height="300" fill="#161612"/>
-              <!-- Record label style -->
-              <circle cx="200" cy="150" r="110" fill="#0e0e0a" stroke="#c49a3c" stroke-width="1.5"/>
-              <circle cx="200" cy="150" r="80" fill="#141410" stroke="#c49a3c" stroke-width="0.75" opacity="0.6"/>
-              <circle cx="200" cy="150" r="50" fill="#0e0e0a" stroke="#c49a3c" stroke-width="0.75" opacity="0.4"/>
-              <circle cx="200" cy="150" r="20" fill="#1a1a14" stroke="#c49a3c" stroke-width="1"/>
-              <circle cx="200" cy="150" r="7" fill="#c49a3c"/>
-              <!-- Label text around circle -->
-              <text x="200" y="108" fill="#c49a3c" font-family="sans-serif" font-size="8.5" text-anchor="middle" letter-spacing="4" opacity="0.9">CHECKLINE COLLECTIVE</text>
-              <text x="200" y="198" fill="#c49a3c" font-family="sans-serif" font-size="7" text-anchor="middle" letter-spacing="3" opacity="0.7">DENVER · COLORADO</text>
-              <!-- Gold accent lines -->
-              <line x1="20" y1="20" x2="60" y2="20" stroke="#c49a3c" stroke-width="1" opacity="0.4"/>
-              <line x1="340" y1="280" x2="380" y2="280" stroke="#c49a3c" stroke-width="1" opacity="0.4"/>
-            </svg>
-          </div>
-          <div class="artist-body">
-            <div class="artist-name">Checkline Collective</div>
-            <div class="artist-tags">
-              <span class="label label-gold">Ska</span>
-              <span class="label label-olive">Rocksteady</span>
-            </div>
-            <div class="artist-city">Denver, CO</div>
-            <p class="artist-desc">Eight-piece ska and rocksteady outfit. Horn arrangements rooted in 1960s Kingston, live show built for the room.</p>
-            <span class="btn btn-outline-gold btn-sm">View Profile →</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Artist 2 -->
-      <div class="artist-card">
-        <div class="artist-visual">
-          <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
-            <rect width="400" height="300" fill="#161210"/>
-            <!-- Zine-cover style -->
-            <rect x="0" y="0" width="400" height="90" fill="#a83232"/>
-            <text x="20" y="64" fill="#f0ede4" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="58" letter-spacing="1">PACIFIC</text>
-            <text x="20" y="148" fill="#f0ede4" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="58" letter-spacing="1">RUDEBOYS</text>
-            <line x1="20" y1="160" x2="380" y2="160" stroke="#f0ede4" stroke-width="1" opacity="0.2"/>
-            <text x="20" y="195" fill="#c49a3c" font-family="sans-serif" font-size="11" letter-spacing="3" opacity="0.8">LOS ANGELES · CA</text>
-            <text x="20" y="215" fill="#f0ede4" font-family="sans-serif" font-size="10" letter-spacing="1" opacity="0.4">2 TONE / BRITISH SKA</text>
-            <!-- Small checker bottom corner -->
-            <rect x="340" y="260" width="15" height="15" fill="#f0ede4" opacity="0.6"/>
-            <rect x="355" y="260" width="15" height="15" fill="#0c0c0a" opacity="0.6"/>
-            <rect x="340" y="275" width="15" height="15" fill="#0c0c0a" opacity="0.6"/>
-            <rect x="355" y="275" width="15" height="15" fill="#f0ede4" opacity="0.6"/>
-          </svg>
-        </div>
-        <div class="artist-body">
-          <div class="artist-name">Pacific Rudeboys</div>
-          <div class="artist-tags">
-            <span class="label label-gold">2 Tone</span>
-            <span class="label label-dim">British Ska</span>
-          </div>
-          <div class="artist-city">Los Angeles, CA</div>
-          <p class="artist-desc">Drawing from The Specials and The Beat, LA's most committed 2 Tone revivalists with a sound rooted in the original vinyl.</p>
-          <span class="btn btn-outline btn-sm" style="opacity:0.5;cursor:default">Profile Coming Soon</span>
-        </div>
-      </div>
-
-      <!-- Artist 3 -->
-      <div class="artist-card">
-        <div class="artist-visual">
-          <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
-            <rect width="400" height="300" fill="#0e0e14"/>
-            <!-- Ska-punk / high energy style -->
-            <!-- Abstract horn graphic -->
-            <path d="M280 150 L160 100 L160 200 Z" fill="#c49a3c" opacity="0.8"/>
-            <path d="M160 106 L90 70 L90 230 L160 194 Z" fill="#c49a3c" opacity="0.55"/>
-            <path d="M90 70 Q30 50 20 120 Q10 190 50 230 L90 230 Z" fill="#c49a3c" opacity="0.35"/>
-            <circle cx="296" cy="150" r="18" fill="none" stroke="#c49a3c" stroke-width="2.5"/>
-            <circle cx="296" cy="150" r="8" fill="#c49a3c"/>
-            <!-- Label -->
-            <rect x="0" y="0" width="400" height="40" fill="#0c0c0a"/>
-            <text x="20" y="27" fill="#c49a3c" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="22" letter-spacing="5">THE VAULT HORNS</text>
-            <line x1="0" y1="40" x2="400" y2="40" stroke="#c49a3c" stroke-width="1" opacity="0.3"/>
-            <text x="20" y="282" fill="#f0ede4" font-family="sans-serif" font-size="10" letter-spacing="2" opacity="0.4">DENVER · SKA-PUNK</text>
-          </svg>
-        </div>
-        <div class="artist-body">
-          <div class="artist-name">The Vault Horns</div>
-          <div class="artist-tags">
-            <span class="label label-red">Ska-Punk</span>
-            <span class="label label-dim">Denver</span>
-          </div>
-          <div class="artist-city">Denver, CO</div>
-          <p class="artist-desc">Six-piece ska-punk band playing the Front Range circuit. Horn-forward, fast, and loud — in the best tradition of third-wave.</p>
-          <span class="btn btn-outline btn-sm" style="opacity:0.5;cursor:default">Profile Coming Soon</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- UPCOMING SHOWS -->
-<section class="section">
-  <div class="s-inner">
-    <div class="s-header">
-      <div><span class="s-eyebrow">Live Music</span><div class="s-title">Upcoming Shows</div></div>
-      <a href="shows/" class="btn btn-outline btn-sm">Full Calendar →</a>
-    </div>
-    <div class="shows-table">
-      <div class="show-row">
-        <div class="show-date"><div class="show-mo">Jun</div><div class="show-day">28</div></div>
-        <div class="show-info"><div class="show-title">Checkline Collective + The Vault Horns</div><div class="show-meta">Marquis Theater · Denver, CO · Doors 7PM · $18 ADV</div></div>
-        <div class="show-cta"><a href="shows/" class="btn btn-gold btn-sm">Tickets →</a></div>
-      </div>
-      <div class="show-row">
-        <div class="show-date"><div class="show-mo">Jun</div><div class="show-day">29</div></div>
-        <div class="show-info"><div class="show-title">Streetlight Manifesto + The Planet Smashers</div><div class="show-meta">Teragram Ballroom · Los Angeles, CA · Doors 7PM · $25 ADV</div></div>
-        <div class="show-cta"><a href="shows/" class="btn btn-outline btn-sm">Info →</a></div>
-      </div>
-      <div class="show-row">
-        <div class="show-date"><div class="show-mo">Jul</div><div class="show-day">5</div></div>
-        <div class="show-info"><div class="show-title">Ska Night: Mile High Edition</div><div class="show-meta">Larimer Lounge · Denver, CO · Doors 8PM · $12 ADV</div></div>
-        <div class="show-cta"><a href="shows/" class="btn btn-outline btn-sm">Info →</a></div>
-      </div>
-      <div class="show-row">
-        <div class="show-date"><div class="show-mo">Jul</div><div class="show-day">20</div></div>
-        <div class="show-info"><div class="show-title">The Interrupters — Headline Tour</div><div class="show-meta">The Wiltern · Los Angeles, CA · Doors 7PM · $35 ADV</div></div>
-        <div class="show-cta"><a href="shows/" class="btn btn-gold btn-sm">Tickets →</a></div>
-      </div>
-      <div class="show-row">
-        <div class="show-date"><div class="show-mo">Aug</div><div class="show-day">3</div></div>
-        <div class="show-info"><div class="show-title">Reel Big Fish — Nation of Two Tour</div><div class="show-meta">Ogden Theatre · Denver, CO · Doors 7PM · $28 ADV</div></div>
-        <div class="show-cta"><a href="shows/" class="btn btn-outline btn-sm">Tickets →</a></div>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:24px">
-      <a href="submit/" style="font-family:var(--font-cond);font-size:0.8rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--mid);border-bottom:1px solid var(--border);padding-bottom:2px">Promote your show on SKAZINE →</a>
-    </div>
-  </div>
-</section>
-
-<!-- PLAYLIST SPOTLIGHT -->
-<section class="section s-dark">
-  <div class="s-inner">
-    <div class="s-header">
-      <div><span class="s-eyebrow">Curated Listening</span><div class="s-title">Playlist Spotlight</div></div>
-      <a href="playlists/" class="btn btn-outline btn-sm">All Playlists →</a>
-    </div>
-    <div class="playlist-grid">
-
-      <!-- Ska Classics -->
-      <a href="playlists/">
-        <div class="playlist-card">
-          <div class="playlist-visual">
-            <svg viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
-              <rect width="320" height="320" fill="#0e0e0a"/>
-              <!-- Record sleeve style -->
-              <rect x="0" y="0" width="320" height="320" fill="#161410"/>
-              <!-- Label area circle -->
-              <circle cx="160" cy="160" r="120" fill="#111108" stroke="#c49a3c" stroke-width="1.5"/>
-              <circle cx="160" cy="160" r="90"  fill="#0e0e0a" stroke="#c49a3c" stroke-width="0.75" opacity="0.5"/>
-              <circle cx="160" cy="160" r="60"  fill="#111108" stroke="#c49a3c" stroke-width="0.75" opacity="0.4"/>
-              <circle cx="160" cy="160" r="30"  fill="#0e0e0a"/>
-              <circle cx="160" cy="160" r="10"  fill="#c49a3c"/>
-              <!-- Center label -->
-              <rect x="110" y="130" width="100" height="60" fill="#c49a3c" opacity="0.12"/>
-              <text x="160" y="153" fill="#c49a3c" font-family="sans-serif" font-size="8" text-anchor="middle" letter-spacing="3" font-weight="700">SKA</text>
-              <text x="160" y="166" fill="#c49a3c" font-family="sans-serif" font-size="8" text-anchor="middle" letter-spacing="3" font-weight="700">CLASSICS</text>
-              <!-- Corner text -->
-              <text x="16" y="30" fill="#c49a3c" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="20" letter-spacing="2" opacity="0.7">SKZ-001</text>
-            </svg>
-          </div>
-          <div class="playlist-body">
-            <div class="playlist-name">Ska Classics</div>
-            <div class="playlist-meta">38 tracks · SKAZINE Editors</div>
-            <div class="playlist-tracks">
-              The Skatalites · Prince Buster<br>
-              Toots and the Maytals · Desmond Dekker
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <!-- Rocksteady Selections -->
-      <a href="playlists/">
-        <div class="playlist-card">
-          <div class="playlist-visual">
-            <svg viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
-              <rect width="320" height="320" fill="#0e100a"/>
-              <!-- Warm olive tone -->
-              <rect x="0" y="0" width="320" height="160" fill="#0e0e0a"/>
-              <rect x="0" y="160" width="320" height="160" fill="#0c0e08"/>
-              <line x1="0" y1="160" x2="320" y2="160" stroke="#6b7a3c" stroke-width="1.5"/>
-              <!-- Abstract wave forms -->
-              <path d="M0 120 Q40 90 80 120 Q120 150 160 120 Q200 90 240 120 Q280 150 320 120" stroke="#6b7a3c" stroke-width="1.5" fill="none" opacity="0.6"/>
-              <path d="M0 140 Q40 110 80 140 Q120 170 160 140 Q200 110 240 140 Q280 170 320 140" stroke="#6b7a3c" stroke-width="1" fill="none" opacity="0.4"/>
-              <!-- Label text -->
-              <text x="160" y="80" fill="#8fa04e" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="44" text-anchor="middle" letter-spacing="1">ROCK</text>
-              <text x="160" y="150" fill="#8fa04e" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="44" text-anchor="middle" letter-spacing="1">STEADY</text>
-              <text x="160" y="230" fill="#6b7a3c" font-family="sans-serif" font-size="9" text-anchor="middle" letter-spacing="4" opacity="0.7">SELECTIONS</text>
-              <text x="160" y="285" fill="#6b7a3c" font-family="sans-serif" font-size="8" text-anchor="middle" letter-spacing="2" opacity="0.5">KINGSTON 1966–1968</text>
-            </svg>
-          </div>
-          <div class="playlist-body">
-            <div class="playlist-name">Rocksteady Selections</div>
-            <div class="playlist-meta">24 tracks · SKAZINE Editors</div>
-            <div class="playlist-tracks">
-              Alton Ellis · The Heptones<br>
-              Phyllis Dillon · Ken Boothe
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <!-- Ska-Punk Anthems -->
-      <a href="playlists/">
-        <div class="playlist-card">
-          <div class="playlist-visual">
-            <svg viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
-              <rect width="320" height="320" fill="#0e0a0a"/>
-              <!-- Punk energy — angular, red accents -->
-              <polygon points="0,0 320,0 320,120 0,80" fill="#a83232" opacity="0.9"/>
-              <text x="16" y="50" fill="#f0ede4" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="52" letter-spacing="0">SKA-PUNK</text>
-              <text x="16" y="100" fill="#f0ede4" font-family="'Bebas Neue','Arial Narrow',sans-serif" font-size="26" letter-spacing="3" opacity="0.8">ANTHEMS</text>
-              <!-- Speed lines -->
-              <line x1="0"   y1="160" x2="320" y2="145" stroke="#f0ede4" stroke-width="1" opacity="0.08"/>
-              <line x1="0"   y1="180" x2="320" y2="162" stroke="#f0ede4" stroke-width="1" opacity="0.06"/>
-              <line x1="0"   y1="200" x2="320" y2="179" stroke="#f0ede4" stroke-width="1" opacity="0.05"/>
-              <!-- Wave form EQ style -->
-              <rect x="20"  y="220" width="12" height="60" fill="#a83232" opacity="0.7"/>
-              <rect x="40"  y="200" width="12" height="80" fill="#a83232" opacity="0.8"/>
-              <rect x="60"  y="230" width="12" height="50" fill="#a83232" opacity="0.6"/>
-              <rect x="80"  y="210" width="12" height="70" fill="#a83232" opacity="0.9"/>
-              <rect x="100" y="225" width="12" height="55" fill="#a83232" opacity="0.7"/>
-              <rect x="120" y="195" width="12" height="85" fill="#a83232" opacity="0.8"/>
-              <rect x="140" y="215" width="12" height="65" fill="#a83232" opacity="0.6"/>
-              <rect x="160" y="205" width="12" height="75" fill="#a83232" opacity="0.75"/>
-              <rect x="180" y="235" width="12" height="45" fill="#a83232" opacity="0.65"/>
-              <rect x="200" y="210" width="12" height="70" fill="#a83232" opacity="0.8"/>
-              <rect x="220" y="220" width="12" height="60" fill="#a83232" opacity="0.7"/>
-              <rect x="240" y="200" width="12" height="80" fill="#a83232" opacity="0.85"/>
-              <rect x="260" y="225" width="12" height="55" fill="#a83232" opacity="0.65"/>
-              <rect x="280" y="215" width="12" height="65" fill="#a83232" opacity="0.75"/>
-              <text x="16" y="308" fill="#f0ede4" font-family="sans-serif" font-size="9" letter-spacing="2" opacity="0.4">REEL BIG FISH · LESS THAN JAKE · STREETLIGHT</text>
-            </svg>
-          </div>
-          <div class="playlist-body">
-            <div class="playlist-name">Ska-Punk Anthems</div>
-            <div class="playlist-meta">45 tracks · Community Pick</div>
-            <div class="playlist-tracks">
-              Reel Big Fish · Less Than Jake<br>
-              Streetlight Manifesto · Op Ivy
-            </div>
-          </div>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- PARTNER CTA -->
-<div class="partner-band">
-  <div class="partner-inner">
-    <div class="partner-grid">
-      <div>
-        <span style="font-family:var(--font-cond);font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold)">Build With Us</span>
-        <h2 class="partner-head">Bands, venues, festivals, labels, and sponsors: build the scene with us.</h2>
-        <p class="partner-sub">SKAZINE is building the infrastructure for ska discovery and scene promotion. Partner with us to reach a dedicated, engaged audience.</p>
-      </div>
-      <div class="partner-ctas">
-        <a href="partner/" class="btn btn-gold">Partner with SKAZINE</a>
-        <a href="partner/" class="btn btn-outline-gold">Sponsor the Dispatch</a>
-      </div>
-    </div>
-    <div class="revenue-row">
-      <div class="revenue-tile"><div class="revenue-name">Claim Profile</div><div class="revenue-desc">Verify your artist page and own your presence on SKAZINE.</div><div class="revenue-badge">Free</div></div>
-      <div class="revenue-tile"><div class="revenue-name">Featured Artist</div><div class="revenue-desc">Homepage placement, newsletter spotlight, editorial feature.</div><div class="revenue-badge">Coming Soon</div></div>
-      <div class="revenue-tile"><div class="revenue-name">Show Boost</div><div class="revenue-desc">Promote upcoming shows to local and national ska audiences.</div><div class="revenue-badge">Coming Soon</div></div>
-      <div class="revenue-tile"><div class="revenue-name">Venue Partner</div><div class="revenue-desc">Calendar integration, branded venue page, city placement.</div><div class="revenue-badge">Coming Soon</div></div>
-      <div class="revenue-tile"><div class="revenue-name">Newsletter Sponsor</div><div class="revenue-desc">Reach 4,000+ ska fans in the SKAZINE Dispatch.</div><div class="revenue-badge">Coming Soon</div></div>
-    </div>
-  </div>
-</div>
-
-<!-- NEWSLETTER -->
-<div class="nl-section">
-  <div class="nl-inner">
-    <span style="font-family:var(--font-cond);font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold)">The Dispatch</span>
-    <h2 class="nl-head">Get the SKAZINE Dispatch.</h2>
-    <p class="nl-sub">New artists, upcoming shows, scene reports, and deep-cut history. No spam. No algorithms. Just ska.</p>
-    <form class="nl-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='You\'re in ✓';this.querySelector('button').style.background='#4a7c4a';this.querySelector('input').disabled=true;this.querySelector('button').disabled=true;">
-      <input type="email" placeholder="your@email.com" required>
-      <button type="submit">Subscribe</button>
-    </form>
-    <p class="nl-note">MVP preview — newsletter not yet active.</p>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-top">
-    <div>
-      <div class="footer-logo">SKAZINE</div>
-      <p class="footer-desc">Independent ska editorial. For the scene, by the scene. No algorithms.</p>
-    </div>
-    <div class="footer-nav">
-      <div class="footer-col"><h4>Editorial</h4><ul>
-        <li><a href="articles/">Articles</a></li>
-        <li><a href="artists/">Artists</a></li>
-        <li><a href="playlists/">Playlists</a></li>
-      </ul></div>
-      <div class="footer-col"><h4>Genres</h4><ul>
-        <li><a href="genres/ska/">Ska</a></li>
-        <li><a href="genres/rocksteady/">Rocksteady</a></li>
-        <li><a href="genres/2-tone/">2 Tone</a></li>
-        <li><a href="genres/ska-punk/">Ska-Punk</a></li>
-      </ul></div>
-      <div class="footer-col"><h4>Live</h4><ul>
-        <li><a href="shows/">Shows</a></li>
-        <li><a href="cities/denver/">Denver</a></li>
-        <li><a href="cities/los-angeles/">Los Angeles</a></li>
-      </ul></div>
-      <div class="footer-col"><h4>Platform</h4><ul>
-        <li><a href="submit/">Submit</a></li>
-        <li><a href="partner/">Partner</a></li>
-        <li><a href="about/">About</a></li>
-      </ul></div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2025 SKAZINE — Independent Ska Editorial</span>
-    <span>DNS untouched · No CMS · Static only</span>
-  </div>
-</footer>
-
 <script src="assets/js/main.js"></script>
 </body>
 </html>
