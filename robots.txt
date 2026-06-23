@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://multigrainintl.github.io/skazine/sitemap.xml
+
+Sitemap: https://skazine.com/sitemap.xml
