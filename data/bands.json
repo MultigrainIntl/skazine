@@ -1,0 +1,272 @@
+[
+  {
+    "id": "aggrolites",
+    "name": "The Aggrolites",
+    "city": "Los Angeles",
+    "region": "CA",
+    "country": "US",
+    "genreTags": ["Ska", "Rocksteady", "Soul"],
+    "shortBio": "West Coast traditional ska and soul grooves. Demo listing — sample data for SKAZINE band directory prototype.",
+    "links": {
+      "website": "https://example.com/demo/aggrolites",
+      "instagram": "https://instagram.com/example",
+      "spotify": "https://open.spotify.com/example",
+      "bandcamp": "https://example.bandcamp.com",
+      "youtube": "https://youtube.com/example"
+    },
+    "bookingEmail": "booking.demo@example.com",
+    "bookingUrl": "",
+    "status": "claimed",
+    "featured": true,
+    "bestFor": {
+      "fans": "Classic ska rhythms and deep grooves",
+      "venues": "Reliable draw for all-ages and 21+ rooms",
+      "writers": "Traditional ska revival story",
+      "radio": "Clean edits, festival-friendly sets",
+      "festivals": "Outdoor stages and weekenders"
+    }
+  },
+  {
+    "id": "interrupters",
+    "name": "The Interrupters",
+    "city": "Los Angeles",
+    "region": "CA",
+    "country": "US",
+    "genreTags": ["Ska-Punk", "Ska"],
+    "shortBio": "Anthemic ska-punk built for massive sing-alongs. Demo listing for directory MVP.",
+    "links": {
+      "website": "https://example.com/demo/interrupters",
+      "instagram": "https://instagram.com/example",
+      "spotify": "https://open.spotify.com/example",
+      "bandcamp": "",
+      "youtube": "https://youtube.com/example"
+    },
+    "bookingEmail": "",
+    "bookingUrl": "https://example.com/demo/booking",
+    "status": "active",
+    "featured": true,
+    "bestFor": {
+      "fans": "High-energy hooks and crowd participation",
+      "venues": "Large club and theater rooms",
+      "writers": "Crossover punk and ska coverage",
+      "radio": "Single-friendly tracks",
+      "festivals": "Main-stage energy"
+    }
+  },
+  {
+    "id": "bim-skala-bim",
+    "name": "Bim Skala Bim",
+    "city": "Boston",
+    "region": "MA",
+    "country": "US",
+    "genreTags": ["Ska", "Third Wave"],
+    "shortBio": "Boston third-wave veterans still packing rooms. Sample demo profile.",
+    "links": {
+      "website": "https://example.com/demo/bimskalabim",
+      "instagram": "https://instagram.com/example",
+      "spotify": "https://open.spotify.com/example",
+      "bandcamp": "https://example.bandcamp.com",
+      "youtube": ""
+    },
+    "bookingEmail": "demo@example.com",
+    "bookingUrl": "",
+    "status": "claimed",
+    "featured": true,
+    "bestFor": {
+      "fans": "East Coast ska institution",
+      "venues": "Clubs and summer outdoor series",
+      "writers": "Scene history and longevity angles",
+      "radio": "Deep catalog for specialty shows",
+      "festivals": "Regional weekenders"
+    }
+  },
+  {
+    "id": "slackers",
+    "name": "The Slackers",
+    "city": "New York",
+    "region": "NY",
+    "country": "US",
+    "genreTags": ["Rocksteady", "Ska", "Dub"],
+    "shortBio": "NYC rocksteady, soul, and dub from one of the scene's most respected bands. Demo data.",
+    "links": {
+      "website": "https://example.com/demo/slackers",
+      "instagram": "https://instagram.com/example",
+      "spotify": "https://open.spotify.com/example",
+      "bandcamp": "https://example.bandcamp.com",
+      "youtube": "https://youtube.com/example"
+    },
+    "bookingEmail": "booking.demo@example.com",
+    "bookingUrl": "",
+    "status": "active",
+    "featured": true,
+    "bestFor": {
+      "fans": "Rocksteady and organ-driven soul",
+      "venues": "Listening rooms and mid-size halls",
+      "writers": "Musicianship and scene legacy",
+      "radio": "Late-night and specialty programming",
+      "festivals": "Roots-oriented bills"
+    }
+  },
+  {
+    "id": "checkline-collective",
+    "name": "Checkline Collective",
+    "city": "Denver",
+    "region": "CO",
+    "country": "US",
+    "genreTags": ["Ska-Punk", "Ska"],
+    "shortBio": "High-energy Denver ska-punk on the rise. Demo listing — unverified sample.",
+    "links": {
+      "website": "https://example.com/demo/checkline",
+      "instagram": "https://instagram.com/example",
+      "spotify": "https://open.spotify.com/example",
+      "bandcamp": "https://example.bandcamp.com",
+      "youtube": ""
+    },
+    "bookingEmail": "hello.demo@example.com",
+    "bookingUrl": "",
+    "status": "unverified",
+    "featured": false,
+    "bestFor": {
+      "fans": "Local scene discovery",
+      "venues": "All-ages rooms and bar venues",
+      "writers": "Emerging band profiles",
+      "radio": "Local spotlight segments",
+      "festivals": "Opening slots and side stages"
+    }
+  },
+  {
+    "id": "planet-smashers",
+    "name": "The Planet Smashers",
+    "city": "Montreal",
+    "region": "QC",
+    "country": "CA",
+    "genreTags": ["Ska", "Ska-Punk"],
+    "shortBio": "Canadian ska institution since the '90s. Demo directory entry.",
+    "links": {
+      "website": "https://example.com/demo/planetsmashers",
+      "instagram": "https://instagram.com/example",
+      "spotify": "https://open.spotify.com/example",
+      "bandcamp": "",
+      "youtube": "https://youtube.com/example"
+    },
+    "bookingEmail": "",
+    "bookingUrl": "https://example.com/demo/booking",
+    "status": "active",
+    "featured": false,
+    "bestFor": {
+      "fans": "Bilingual bills and festival favorites",
+      "venues": "Cross-border touring routes",
+      "writers": "Canadian ska history",
+      "radio": "French and English programming",
+      "festivals": "Summer festival circuits"
+    }
+  },
+  {
+    "id": "pietasters",
+    "name": "The Pietasters",
+    "city": "Washington",
+    "region": "DC",
+    "country": "US",
+    "genreTags": ["Ska", "Soul"],
+    "shortBio": "DC ska and soul veterans with decades of road miles. Sample demo profile.",
+    "links": {
+      "website": "https://example.com/demo/pietasters",
+      "instagram": "https://instagram.com/example",
+      "spotify": "https://open.spotify.com/example",
+      "bandcamp": "https://example.bandcamp.com",
+      "youtube": "https://youtube.com/example"
+    },
+    "bookingEmail": "booking.demo@example.com",
+    "bookingUrl": "",
+    "status": "claimed",
+    "featured": false,
+    "bestFor": {
+      "fans": "DC scene cornerstone",
+      "venues": "Clubs, theaters, and fests",
+      "writers": "East Coast touring features",
+      "radio": "Ska and soul crossover",
+      "festivals": "Ska-heavy lineups"
+    }
+  },
+  {
+    "id": "specials",
+    "name": "The Specials",
+    "city": "Coventry",
+    "region": "West Midlands",
+    "country": "UK",
+    "genreTags": ["2 Tone", "Ska", "Rocksteady"],
+    "shortBio": "2 Tone pioneers — demo listing representing legacy acts in the directory schema.",
+    "links": {
+      "website": "https://example.com/demo/specials",
+      "instagram": "https://instagram.com/example",
+      "spotify": "https://open.spotify.com/example",
+      "bandcamp": "",
+      "youtube": "https://youtube.com/example"
+    },
+    "bookingEmail": "",
+    "bookingUrl": "https://example.com/demo/booking",
+    "status": "active",
+    "featured": false,
+    "bestFor": {
+      "fans": "2 Tone history and anthems",
+      "venues": "Large halls and festivals",
+      "writers": "Genre origin stories",
+      "radio": "Classic and heritage programming",
+      "festivals": "Heritage and reunion bills"
+    }
+  },
+  {
+    "id": "stubborn-all-stars",
+    "name": "Stubborn All-Stars",
+    "city": "New York",
+    "region": "NY",
+    "country": "US",
+    "genreTags": ["Ska", "Rocksteady"],
+    "shortBio": "NY ska supergroup energy — demo sample for rocksteady-tagged bands.",
+    "links": {
+      "website": "https://example.com/demo/stubborn",
+      "instagram": "https://instagram.com/example",
+      "spotify": "https://open.spotify.com/example",
+      "bandcamp": "https://example.bandcamp.com",
+      "youtube": ""
+    },
+    "bookingEmail": "demo@example.com",
+    "bookingUrl": "",
+    "status": "unverified",
+    "featured": false,
+    "bestFor": {
+      "fans": "All-star lineups and deep cuts",
+      "venues": "Special event nights",
+      "writers": "Musician collective angles",
+      "radio": "Deep catalog spins",
+      "festivals": "Special guest sets"
+    }
+  },
+  {
+    "id": "reel-big-fish",
+    "name": "Reel Big Fish",
+    "city": "Huntington Beach",
+    "region": "CA",
+    "country": "US",
+    "genreTags": ["Ska-Punk", "Ska"],
+    "shortBio": "Third-wave ska-punk staples — demo listing for high-profile directory entries.",
+    "links": {
+      "website": "https://example.com/demo/rbf",
+      "instagram": "https://instagram.com/example",
+      "spotify": "https://open.spotify.com/example",
+      "bandcamp": "",
+      "youtube": "https://youtube.com/example"
+    },
+    "bookingEmail": "",
+    "bookingUrl": "https://example.com/demo/booking",
+    "status": "active",
+    "featured": false,
+    "bestFor": {
+      "fans": "Ska-punk party sets",
+      "venues": "Large clubs and amphitheaters",
+      "writers": "Third-wave retrospectives",
+      "radio": "Drive-time and specialty punk",
+      "festivals": "Ska-punk and multi-genre fests"
+    }
+  }
+]

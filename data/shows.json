@@ -1,0 +1,62 @@
+[
+  {
+    "id": "offbeat-boogie",
+    "name": "Offbeat Boogie",
+    "date": "2025-05-24",
+    "month": "May",
+    "day": "24",
+    "city": "Washington",
+    "region": "DC",
+    "time": "8:00 PM",
+    "venue": "Black Cat",
+    "featured": true
+  },
+  {
+    "id": "international-spy",
+    "name": "International Spy",
+    "date": "2025-05-29",
+    "month": "May",
+    "day": "29",
+    "city": "Boston",
+    "region": "MA",
+    "time": "9:00 PM",
+    "venue": "Middle East",
+    "featured": true
+  },
+  {
+    "id": "planet-smashers-toronto",
+    "name": "The Planet Smashers",
+    "date": "2025-06-03",
+    "month": "Jun",
+    "day": "03",
+    "city": "Toronto",
+    "region": "ON",
+    "time": "7:30 PM",
+    "venue": "Lee's Palace",
+    "featured": true
+  },
+  {
+    "id": "pietasters-baltimore",
+    "name": "The Pietasters",
+    "date": "2025-06-14",
+    "month": "Jun",
+    "day": "14",
+    "city": "Baltimore",
+    "region": "MD",
+    "time": "8:00 PM",
+    "venue": "Ottobar",
+    "featured": true
+  },
+  {
+    "id": "checkline-denver",
+    "name": "Checkline Collective",
+    "date": "2025-06-28",
+    "month": "Jun",
+    "day": "28",
+    "city": "Denver",
+    "region": "CO",
+    "time": "8:00 PM",
+    "venue": "Larimer Lounge",
+    "featured": false
+  }
+]

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Scenes — SKAZINE</title>
+  <meta name="description" content="Local ska scene directories by city — bands, venues, and shows on SKAZINE.">
+  <link rel="canonical" href="https://skazine.com/cities/">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+<header class="platform-masthead">
+  <div class="container platform-masthead__inner">
+    <a href="/" class="nav-logo" aria-label="SKAZINE Home">
+      <svg class="logo-svg" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect width="14" height="14" fill="#f5f3ee"/><rect x="14" width="14" height="14" fill="#0a0a0a"/><rect y="14" width="14" height="14" fill="#0a0a0a"/><rect x="14" y="14" width="14" height="14" fill="#f5f3ee"/></svg>
+      SKAZINE
+    </a>
+    <p class="platform-tagline">City scene directories</p>
+  </div>
+  <div class="checker-strip checker-strip--bold" aria-hidden="true"></div>
+  <nav class="site-nav platform-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <ul class="nav-links platform-nav-links" role="list">
+        <li><a href="/bands/">Bands</a></li><li><a href="/shows/">Shows</a></li><li><a href="/festivals/">Festivals</a></li>
+        <li><a href="/map/">Map</a></li><li><a href="/radio/">Radio</a></li><li><a href="/writers/">Writers</a></li>
+        <li><a href="/playlists/">Playlists</a></li><li><a href="/cities/" class="active">Cities</a></li>
+      </ul>
+      <div class="platform-nav-actions">
+        <a href="/submit/" class="nav-cta">Submit</a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+</header>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <a href="/">Home</a><a href="/bands/">Bands</a><a href="/shows/">Shows</a><a href="/festivals/">Festivals</a>
+  <a href="/map/">Map</a><a href="/radio/">Radio</a><a href="/writers/">Writers</a><a href="/playlists/">Playlists</a>
+  <a href="/cities/">Cities</a><a href="/submit/">Submit</a><a href="/partner/">Partner</a>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Directory</span>
+      <h1 class="display-lg">City Scenes</h1>
+      <p class="body-lg muted mt-16" style="max-width:520px;">Local hubs for bands, venues, promoters, and fans in cities worldwide.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div id="directory-cities" class="platform-city-grid" style="grid-template-columns:repeat(auto-fill,minmax(200px,1fr));"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer platform-footer">
+  <div class="checker-strip checker-strip--bold" aria-hidden="true"></div>
+  <div class="container footer-bottom" style="border:none;padding:24px 0;"><p>© 2025 SKAZINE</p></div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/platform.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    SKAZINE.renderDirectory({ targetId: 'directory-cities', dataPath: '/data/cities.json', render: SKAZINE.renderCityCard });
+  });
+</script>
+</body>
+</html>

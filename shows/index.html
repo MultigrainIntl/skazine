@@ -13,23 +13,30 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-<nav class="site-nav" role="navigation" aria-label="Main navigation">
-  <div class="nav-inner">
+<header class="platform-masthead">
+  <div class="container platform-masthead__inner">
     <a href="/" class="nav-logo" aria-label="SKAZINE Home"><svg class="logo-svg" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect width="14" height="14" fill="#f5f3ee"/><rect x="14" width="14" height="14" fill="#0a0a0a"/><rect y="14" width="14" height="14" fill="#0a0a0a"/><rect x="14" y="14" width="14" height="14" fill="#f5f3ee"/></svg>SKAZINE</a>
-    <ul class="nav-links" role="list">
-      <li><a href="/articles/">Articles</a></li><li><a href="/artists/">Artists</a></li>
-      <li><a href="/shows/" class="active">Shows</a></li><li><a href="/playlists/">Playlists</a></li>
-      <li><a href="/genres/ska/">Genres</a></li><li><a href="/cities/denver/">Cities</a></li><li><a href="/about/">About</a></li>
-    </ul>
-    <a href="/submit/" class="nav-cta">Submit</a>
-    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+    <p class="platform-tagline">Show listings</p>
   </div>
-</nav>
+  <div class="checker-strip checker-strip--bold" aria-hidden="true"></div>
+  <nav class="site-nav platform-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <ul class="nav-links platform-nav-links" role="list">
+        <li><a href="/bands/">Bands</a></li><li><a href="/shows/" class="active">Shows</a></li><li><a href="/festivals/">Festivals</a></li>
+        <li><a href="/map/">Map</a></li><li><a href="/radio/">Radio</a></li><li><a href="/writers/">Writers</a></li>
+        <li><a href="/playlists/">Playlists</a></li><li><a href="/cities/">Cities</a></li>
+      </ul>
+      <div class="platform-nav-actions">
+        <a href="/submit/" class="nav-cta">Submit</a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+</header>
 <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
-  <a href="/">Home</a><a href="/articles/">Articles</a><a href="/artists/">Artists</a>
-  <a href="/shows/">Shows</a><a href="/playlists/">Playlists</a><a href="/genres/ska/">Genres</a>
-  <a href="/cities/denver/">Cities</a><a href="/about/">About</a>
-  <a href="/submit/">Submit Music / Show</a><a href="/partner/">Partner With Us</a>
+  <a href="/">Home</a><a href="/bands/">Bands</a><a href="/shows/">Shows</a><a href="/festivals/">Festivals</a>
+  <a href="/map/">Map</a><a href="/radio/">Radio</a><a href="/writers/">Writers</a><a href="/playlists/">Playlists</a>
+  <a href="/cities/">Cities</a><a href="/submit/">Submit</a><a href="/partner/">Partner</a>
 </nav>
 <main id="main-content">
 

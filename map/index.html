@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scene Map — SKAZINE</title>
+  <meta name="description" content="Explore the global ska scene on the SKAZINE map — bands, venues, festivals, radio, and writers by location.">
+  <link rel="canonical" href="https://skazine.com/map/">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+<header class="platform-masthead">
+  <div class="container platform-masthead__inner">
+    <a href="/" class="nav-logo" aria-label="SKAZINE Home">
+      <svg class="logo-svg" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect width="14" height="14" fill="#f5f3ee"/><rect x="14" width="14" height="14" fill="#0a0a0a"/><rect y="14" width="14" height="14" fill="#0a0a0a"/><rect x="14" y="14" width="14" height="14" fill="#f5f3ee"/></svg>
+      SKAZINE
+    </a>
+    <p class="platform-tagline">Scene map</p>
+  </div>
+  <div class="checker-strip checker-strip--bold" aria-hidden="true"></div>
+  <nav class="site-nav platform-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <ul class="nav-links platform-nav-links" role="list">
+        <li><a href="/bands/">Bands</a></li><li><a href="/shows/">Shows</a></li><li><a href="/festivals/">Festivals</a></li>
+        <li><a href="/map/" class="active">Map</a></li><li><a href="/radio/">Radio</a></li><li><a href="/writers/">Writers</a></li>
+        <li><a href="/playlists/">Playlists</a></li><li><a href="/cities/">Cities</a></li>
+      </ul>
+      <div class="platform-nav-actions">
+        <a href="/submit/" class="nav-cta">Submit</a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+</header>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <a href="/">Home</a><a href="/bands/">Bands</a><a href="/shows/">Shows</a><a href="/festivals/">Festivals</a>
+  <a href="/map/">Map</a><a href="/radio/">Radio</a><a href="/writers/">Writers</a><a href="/playlists/">Playlists</a>
+  <a href="/cities/">Cities</a><a href="/submit/">Submit</a><a href="/partner/">Partner</a>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Directory</span>
+      <h1 class="display-lg">Scene Map</h1>
+      <p class="body-lg muted mt-16" style="max-width:520px;">Browse bands, venues, festivals, radio shows, writers, and city scenes by location.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="platform-map-preview" style="padding:24px;">
+        <div class="platform-map-legend">
+          <span><i class="dot dot--olive"></i> Bands</span>
+          <span><i class="dot dot--red"></i> Venues</span>
+          <span><i class="dot dot--gold"></i> Festivals</span>
+          <span><i class="dot"></i> Radio</span>
+          <span><i class="dot dot--red"></i> Writers</span>
+          <span><i class="dot dot--olive"></i> City Scenes</span>
+        </div>
+        <div class="platform-map-canvas" style="height:360px;">
+          <span class="platform-pin" style="left:22%;top:45%"></span>
+          <span class="platform-pin platform-pin--red" style="left:28%;top:40%"></span>
+          <span class="platform-pin platform-pin--gold" style="left:46%;top:36%"></span>
+          <span class="platform-pin" style="left:50%;top:50%"></span>
+          <span class="platform-pin platform-pin--red" style="left:68%;top:42%"></span>
+          <span class="platform-pin platform-pin--gold" style="left:75%;top:58%"></span>
+          <span class="platform-pin" style="left:85%;top:48%"></span>
+        </div>
+        <p class="body-sm muted mt-24">Interactive map prototype — pins represent sample directory entries. Submit a listing to appear on the map.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer platform-footer">
+  <div class="checker-strip checker-strip--bold" aria-hidden="true"></div>
+  <div class="container footer-bottom" style="border:none;padding:24px 0;"><p>© 2025 SKAZINE</p></div>
+</footer>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
