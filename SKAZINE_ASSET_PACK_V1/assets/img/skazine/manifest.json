@@ -1,0 +1,347 @@
+{
+  "source": "/mnt/data/a_wide_web_homepage_screenshot_magazine_site_layou.png",
+  "source_size": [
+    1536,
+    1024
+  ],
+  "assets": [
+    {
+      "file": "assets/img/skazine/hero-stage-brass.png",
+      "source_box": [
+        370,
+        75,
+        770,
+        380
+      ],
+      "size": [
+        400,
+        305
+      ]
+    },
+    {
+      "file": "assets/img/skazine/poster-this-is-ska-culture.png",
+      "source_box": [
+        1005,
+        90,
+        1225,
+        365
+      ],
+      "size": [
+        220,
+        275
+      ]
+    },
+    {
+      "file": "assets/img/skazine/poster-live-music-scene-alive.png",
+      "source_box": [
+        1325,
+        85,
+        1515,
+        325
+      ],
+      "size": [
+        380,
+        480
+      ]
+    },
+    {
+      "file": "assets/img/skazine/poster-support-bands-buy-merch.png",
+      "source_box": [
+        1310,
+        305,
+        1500,
+        425
+      ],
+      "size": [
+        380,
+        240
+      ]
+    },
+    {
+      "file": "assets/img/skazine/platform-bands-icon.png",
+      "source_box": [
+        45,
+        395,
+        145,
+        485
+      ],
+      "size": [
+        200,
+        180
+      ]
+    },
+    {
+      "file": "assets/img/skazine/platform-shows-icon.png",
+      "source_box": [
+        405,
+        395,
+        500,
+        485
+      ],
+      "size": [
+        190,
+        180
+      ]
+    },
+    {
+      "file": "assets/img/skazine/platform-radio-writers-icon.png",
+      "source_box": [
+        782,
+        395,
+        875,
+        485
+      ],
+      "size": [
+        186,
+        180
+      ]
+    },
+    {
+      "file": "assets/img/skazine/platform-festivals-cities-icon.png",
+      "source_box": [
+        1145,
+        395,
+        1235,
+        485
+      ],
+      "size": [
+        180,
+        180
+      ]
+    },
+    {
+      "file": "assets/img/skazine/band-aggrolites-card.png",
+      "source_box": [
+        45,
+        535,
+        170,
+        625
+      ],
+      "size": [
+        250,
+        180
+      ]
+    },
+    {
+      "file": "assets/img/skazine/band-interrupters-card.png",
+      "source_box": [
+        190,
+        535,
+        310,
+        625
+      ],
+      "size": [
+        240,
+        180
+      ]
+    },
+    {
+      "file": "assets/img/skazine/band-bim-skala-bim-card.png",
+      "source_box": [
+        325,
+        535,
+        465,
+        625
+      ],
+      "size": [
+        280,
+        180
+      ]
+    },
+    {
+      "file": "assets/img/skazine/band-slackers-card.png",
+      "source_box": [
+        480,
+        535,
+        620,
+        625
+      ],
+      "size": [
+        280,
+        180
+      ]
+    },
+    {
+      "file": "assets/img/skazine/festival-great-ska-weekender.png",
+      "source_box": [
+        1037,
+        530,
+        1175,
+        680
+      ],
+      "size": [
+        276,
+        300
+      ]
+    },
+    {
+      "file": "assets/img/skazine/festival-skalopalooza-verification-needed.png",
+      "source_box": [
+        1190,
+        530,
+        1350,
+        680
+      ],
+      "size": [
+        320,
+        300
+      ]
+    },
+    {
+      "file": "assets/img/skazine/festival-rototom-sunsplash.png",
+      "source_box": [
+        1365,
+        530,
+        1500,
+        680
+      ],
+      "size": [
+        270,
+        300
+      ]
+    },
+    {
+      "file": "assets/img/skazine/scene-map-preview.png",
+      "source_box": [
+        45,
+        800,
+        325,
+        935
+      ],
+      "size": [
+        560,
+        270
+      ]
+    },
+    {
+      "file": "assets/img/skazine/radio-rude-boy-logo.png",
+      "source_box": [
+        350,
+        802,
+        383,
+        835
+      ],
+      "size": [
+        66,
+        66
+      ]
+    },
+    {
+      "file": "assets/img/skazine/radio-unity-radio-logo.png",
+      "source_box": [
+        350,
+        845,
+        383,
+        878
+      ],
+      "size": [
+        66,
+        66
+      ]
+    },
+    {
+      "file": "assets/img/skazine/radio-boss-sounds-logo.png",
+      "source_box": [
+        350,
+        890,
+        383,
+        920
+      ],
+      "size": [
+        66,
+        60
+      ]
+    },
+    {
+      "file": "assets/img/skazine/writer-dave-avatar.png",
+      "source_box": [
+        602,
+        800,
+        635,
+        835
+      ],
+      "size": [
+        66,
+        70
+      ]
+    },
+    {
+      "file": "assets/img/skazine/writer-lena-avatar.png",
+      "source_box": [
+        602,
+        845,
+        635,
+        880
+      ],
+      "size": [
+        66,
+        70
+      ]
+    },
+    {
+      "file": "assets/img/skazine/writer-matt-avatar.png",
+      "source_box": [
+        602,
+        890,
+        635,
+        922
+      ],
+      "size": [
+        66,
+        64
+      ]
+    },
+    {
+      "file": "assets/img/skazine/city-denver-card.png",
+      "source_box": [
+        895,
+        802,
+        965,
+        880
+      ],
+      "size": [
+        140,
+        156
+      ]
+    },
+    {
+      "file": "assets/img/skazine/city-los-angeles-card.png",
+      "source_box": [
+        970,
+        802,
+        1040,
+        880
+      ],
+      "size": [
+        140,
+        156
+      ]
+    },
+    {
+      "file": "assets/img/skazine/city-chicago-card.png",
+      "source_box": [
+        1045,
+        802,
+        1118,
+        880
+      ],
+      "size": [
+        146,
+        156
+      ]
+    },
+    {
+      "file": "assets/img/skazine/partner-crowd-panel.png",
+      "source_box": [
+        1360,
+        875,
+        1505,
+        965
+      ],
+      "size": [
+        290,
+        180
+      ]
+    }
+  ]
+}

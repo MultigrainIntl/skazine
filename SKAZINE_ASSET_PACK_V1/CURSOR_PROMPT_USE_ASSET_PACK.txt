@@ -1,0 +1,57 @@
+Use the SKAZINE asset pack now.
+
+The asset pack has been added to this repo:
+assets/img/skazine/
+design-references/skazine-homepage-approved-master.png
+
+Do not push.
+Do not deploy.
+Do not touch DNS.
+Do not ask for tokens.
+
+The previous homepage is rejected because it relies on weak CSS placeholders and does not resemble the approved reference closely enough.
+
+Source of truth:
+design-references/skazine-homepage-approved-master.png
+
+Use the real cropped assets in:
+assets/img/skazine/
+
+Task:
+Update only index.html and assets/css/main.css for now.
+
+Replace weak CSS-only art with actual image assets:
+- hero-stage-brass.png for the hero performance/photo area
+- poster-this-is-ska-culture.png
+- poster-live-music-scene-alive.png
+- poster-support-bands-buy-merch.png
+- platform-bands-icon.png
+- platform-shows-icon.png
+- platform-radio-writers-icon.png
+- platform-festivals-cities-icon.png
+- band card images
+- festival card images
+- scene-map-preview.png
+- radio logos
+- writer avatars
+- city cards
+- partner-crowd-panel.png
+
+Goal:
+Make http://localhost:8000/ resemble the approved reference much more closely.
+
+Hard requirements:
+- Do not invent a new design.
+- Do not use empty circles or generic gradients where image assets exist.
+- Keep the dense magazine / directory / festival guide feel.
+- Keep black/off-white/olive/muted red/checker style.
+- Use actual assets to create visual richness.
+- Prioritize visual resemblance over semantic completeness.
+
+After editing:
+1. Run:
+   git status --short
+   git diff --stat
+2. Tell me which files changed.
+3. Tell me to hard refresh http://localhost:8000/
+4. Do not push.
