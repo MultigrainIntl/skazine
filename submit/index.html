@@ -12,23 +12,30 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-<nav class="site-nav" role="navigation" aria-label="Main navigation">
-  <div class="nav-inner">
+<header class="platform-masthead">
+  <div class="container platform-masthead__inner">
     <a href="/" class="nav-logo" aria-label="SKAZINE Home"><svg class="logo-svg" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect width="14" height="14" fill="#f5f3ee"/><rect x="14" width="14" height="14" fill="#0a0a0a"/><rect y="14" width="14" height="14" fill="#0a0a0a"/><rect x="14" y="14" width="14" height="14" fill="#f5f3ee"/></svg>SKAZINE</a>
-    <ul class="nav-links" role="list">
-      <li><a href="/articles/">Articles</a></li><li><a href="/artists/">Artists</a></li><li><a href="/shows/">Shows</a></li>
-      <li><a href="/playlists/">Playlists</a></li><li><a href="/genres/ska/">Genres</a></li>
-      <li><a href="/cities/denver/">Cities</a></li><li><a href="/about/">About</a></li>
-    </ul>
-    <a href="/submit/" class="nav-cta" style="background:var(--gold);color:var(--black);">Submit</a>
-    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+    <p class="platform-tagline">Submit to the directory</p>
   </div>
-</nav>
+  <div class="checker-strip checker-strip--bold" aria-hidden="true"></div>
+  <nav class="site-nav platform-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <ul class="nav-links platform-nav-links" role="list">
+        <li><a href="/bands/">Bands</a></li><li><a href="/shows/">Shows</a></li><li><a href="/festivals/">Festivals</a></li>
+        <li><a href="/map/">Map</a></li><li><a href="/radio/">Radio</a></li><li><a href="/writers/">Writers</a></li>
+        <li><a href="/playlists/">Playlists</a></li><li><a href="/cities/">Cities</a></li>
+      </ul>
+      <div class="platform-nav-actions">
+        <a href="/submit/" class="nav-cta" style="background:var(--gold);color:var(--black);">Submit</a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+</header>
 <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
-  <a href="/">Home</a><a href="/articles/">Articles</a><a href="/artists/">Artists</a>
-  <a href="/shows/">Shows</a><a href="/playlists/">Playlists</a><a href="/genres/ska/">Genres</a>
-  <a href="/cities/denver/">Cities</a><a href="/about/">About</a>
-  <a href="/submit/">Submit Music / Show</a><a href="/partner/">Partner With Us</a>
+  <a href="/">Home</a><a href="/bands/">Bands</a><a href="/shows/">Shows</a><a href="/festivals/">Festivals</a>
+  <a href="/map/">Map</a><a href="/radio/">Radio</a><a href="/writers/">Writers</a><a href="/playlists/">Playlists</a>
+  <a href="/cities/">Cities</a><a href="/submit/">Submit</a><a href="/partner/">Partner</a>
 </nav>
 <main id="main-content">
 
@@ -37,6 +44,71 @@
       <span class="eyebrow">Get Listed</span>
       <h1 class="display-lg">Submit Your Music</h1>
       <p class="body-lg muted mt-16" style="max-width:520px;">Artists, bands, and venues can submit for free coverage, show listings, and artist profiles on SKAZINE.</p>
+    </div>
+  </section>
+
+  <section class="section" id="submit-band">
+    <div class="container">
+      <header class="section-header" style="margin-bottom:32px;">
+        <div>
+          <span class="eyebrow">Band Directory</span>
+          <h2 class="display-md">Submit a Band</h2>
+          <p class="body-lg muted mt-16" style="max-width:560px;">Add your band to the SKAZINE directory, update an existing listing, or claim a profile. Backend submission is coming soon — this form is a visual prototype.</p>
+        </div>
+      </header>
+
+      <form class="demo-form band-submit-form" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="submit-band-name">Band name *</label>
+          <input class="form-input" type="text" id="submit-band-name" placeholder="Your Band Name" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="submit-city">City *</label>
+            <input class="form-input" type="text" id="submit-city" placeholder="Denver" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="submit-region">Region / State</label>
+            <input class="form-input" type="text" id="submit-region" placeholder="CO">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="submit-country">Country *</label>
+            <input class="form-input" type="text" id="submit-country" placeholder="US" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="submit-genres">Genre tags</label>
+          <input class="form-input" type="text" id="submit-genres" placeholder="Ska, Ska-Punk, Rocksteady">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="submit-bio">Bio</label>
+          <textarea class="form-textarea" id="submit-bio" placeholder="Short bio for your directory profile (100–200 words)"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="submit-music-links">Music links</label>
+          <input class="form-input" type="url" id="submit-music-links" placeholder="Spotify, Bandcamp, YouTube, website">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="submit-booking">Contact / booking link</label>
+          <input class="form-input" type="text" id="submit-booking" placeholder="booking@band.com or https://...">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="submit-photos">Photos / logo</label>
+          <input class="form-input" type="text" id="submit-photos" placeholder="Coming soon — upload in next phase" disabled>
+          <p class="body-sm muted mt-8">Photo and logo uploads will be available when the backend is connected.</p>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="submit-reason">Submit / update / claim reason</label>
+          <select class="form-select" id="submit-reason">
+            <option value="new">New band listing</option>
+            <option value="update">Update existing profile</option>
+            <option value="claim">Claim this profile</option>
+          </select>
+        </div>
+        <p class="body-sm muted" style="margin-bottom:16px;">For now, email <a href="mailto:submit@skazine.com">submit@skazine.com</a> with the same details, or use the demo button below.</p>
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;max-width:360px;justify-content:center;">Submit Band (Demo)</button>
+        <div class="form-success" style="display:none;background:rgba(139,125,58,0.1);border:1px solid var(--gold);border-radius:2px;padding:16px;margin-top:16px;max-width:360px;text-align:center;color:var(--gold);">✓ Received! (Demo mode — nothing stored)</div>
+      </form>
     </div>
   </section>
 
@@ -213,7 +285,50 @@
   </section>
 
 </main>
-<footer class="site-footer" role="contentinfo"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="/" class="nav-logo" style="display:flex;align-items:center;gap:10px;margin-bottom:16px;"><svg class="logo-svg" viewBox="0 0 28 28" fill="none"><rect width="14" height="14" fill="#f5f3ee"/><rect x="14" width="14" height="14" fill="#0a0a0a"/><rect y="14" width="14" height="14" fill="#0a0a0a"/><rect x="14" y="14" width="14" height="14" fill="#f5f3ee"/></svg>SKAZINE</a><p>The independent voice of ska, rocksteady, 2-Tone, and ska-punk.</p></div><div class="footer-col"><h5>Explore</h5><ul><li><a href="/articles/">Articles</a></li><li><a href="/artists/">Artists</a></li><li><a href="/shows/">Shows</a></li><li><a href="/playlists/">Playlists</a></li></ul></div><div class="footer-col"><h5>Genres</h5><ul><li><a href="/genres/ska/">Ska</a></li><li><a href="/genres/rocksteady/">Rocksteady</a></li><li><a href="/genres/2-tone/">2-Tone</a></li><li><a href="/genres/ska-punk/">Ska-Punk</a></li></ul></div><div class="footer-col"><h5>Connect</h5><ul><li><a href="/submit/">Submit Music</a></li><li><a href="/partner/">Partner With Us</a></li><li><a href="/about/">About SKAZINE</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2025 SKAZINE. All rights reserved.</p><div class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a></div></div></div></footer>
+<footer class="site-footer platform-footer" role="contentinfo">
+  <div class="checker-strip checker-strip--bold" aria-hidden="true"></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">SKAZINE</a>
+        <p>Promote the music. Support the bands. Document the scene. Connect the people keeping the genre alive.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Directory</h5>
+        <ul>
+          <li><a href="/bands/">Bands</a></li>
+          <li><a href="/shows/">Shows</a></li>
+          <li><a href="/festivals/">Festivals</a></li>
+          <li><a href="/map/">Scene Map</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Community</h5>
+        <ul>
+          <li><a href="/radio/">Radio</a></li>
+          <li><a href="/writers/">Writers</a></li>
+          <li><a href="/cities/">Cities</a></li>
+          <li><a href="/playlists/">Playlists</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get Involved</h5>
+        <ul>
+          <li><a href="/submit/">Submit</a></li>
+          <li><a href="/partner/">Partner</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SKAZINE. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="/partner/">Privacy</a>
+        <a href="/partner/">Terms</a>
+        <a href="/submit/">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
 <script src="/assets/js/main.js"></script>
 <script>
 function showTab(tab) {

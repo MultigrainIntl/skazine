@@ -1,0 +1,34 @@
+[
+  {
+    "id": "rude-boy-radio",
+    "name": "Rude Boy Radio",
+    "city": "London",
+    "format": "Ska & Rocksteady",
+    "schedule": "Fridays 7 PM GMT",
+    "featured": true
+  },
+  {
+    "id": "unity-radio",
+    "name": "Unity Radio",
+    "city": "Manchester",
+    "format": "2 Tone & Ska-Punk",
+    "schedule": "Sundays 4 PM GMT",
+    "featured": true
+  },
+  {
+    "id": "boss-sounds",
+    "name": "Boss Sounds FM",
+    "city": "Los Angeles",
+    "format": "Global Ska",
+    "schedule": "Weeknights 9 PM PT",
+    "featured": true
+  },
+  {
+    "id": "upstroke-hour",
+    "name": "The Upstroke Hour",
+    "city": "Chicago",
+    "format": "Ska & Reggae",
+    "schedule": "Saturdays 2 PM CT",
+    "featured": false
+  }
+]

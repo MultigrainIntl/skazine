@@ -1,0 +1,34 @@
+[
+  {
+    "id": "dave-k",
+    "name": "Dave K.",
+    "role": "Writer",
+    "beat": "Scene reports & show reviews",
+    "initials": "DK",
+    "featured": true
+  },
+  {
+    "id": "lena-m",
+    "name": "Lena M.",
+    "role": "Blogger",
+    "beat": "Festival guides & band interviews",
+    "initials": "LM",
+    "featured": true
+  },
+  {
+    "id": "matt-r",
+    "name": "Matt R.",
+    "role": "Photographer",
+    "beat": "Live photos & tour diaries",
+    "initials": "MR",
+    "featured": true
+  },
+  {
+    "id": "sara-t",
+    "name": "Sara T.",
+    "role": "Writer",
+    "beat": "History & culture deep dives",
+    "initials": "ST",
+    "featured": false
+  }
+]

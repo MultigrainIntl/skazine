@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bands — SKAZINE</title>
+  <meta name="description" content="Discover ska, rocksteady, reggae, 2 Tone, and ska-punk bands in the SKAZINE directory.">
+  <link rel="canonical" href="https://skazine.com/bands/">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+<header class="platform-masthead">
+  <div class="container platform-masthead__inner">
+    <a href="/" class="nav-logo" aria-label="SKAZINE Home">
+      <svg class="logo-svg" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <rect width="14" height="14" fill="#f5f3ee"/><rect x="14" width="14" height="14" fill="#0a0a0a"/>
+        <rect y="14" width="14" height="14" fill="#0a0a0a"/><rect x="14" y="14" width="14" height="14" fill="#f5f3ee"/>
+      </svg>
+      SKAZINE
+    </a>
+    <p class="platform-tagline">Band directory</p>
+  </div>
+  <div class="checker-strip checker-strip--bold" aria-hidden="true"></div>
+  <nav class="site-nav platform-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <ul class="nav-links platform-nav-links" role="list">
+        <li><a href="/bands/" class="active">Bands</a></li>
+        <li><a href="/shows/">Shows</a></li>
+        <li><a href="/festivals/">Festivals</a></li>
+        <li><a href="/map/">Map</a></li>
+        <li><a href="/radio/">Radio</a></li>
+        <li><a href="/writers/">Writers</a></li>
+        <li><a href="/playlists/">Playlists</a></li>
+        <li><a href="/cities/">Cities</a></li>
+      </ul>
+      <div class="platform-nav-actions">
+        <a href="/submit/" class="nav-cta">Submit</a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+</header>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <a href="/">Home</a><a href="/bands/">Bands</a><a href="/shows/">Shows</a><a href="/festivals/">Festivals</a>
+  <a href="/map/">Map</a><a href="/radio/">Radio</a><a href="/writers/">Writers</a><a href="/playlists/">Playlists</a>
+  <a href="/cities/">Cities</a><a href="/submit/">Submit</a><a href="/partner/">Partner</a>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Directory</span>
+      <h1 class="display-lg">Bands</h1>
+      <p class="body-lg muted mt-16" style="max-width:560px;">Discover bands across ska, rocksteady, reggae, 2 Tone, ska-punk, and related scenes. Built for fans, venues, writers, radio shows, festivals, and sponsors looking for the people keeping the scene alive.</p>
+      <div class="band-dir-ctas mt-24">
+        <a href="/submit/#submit-band" class="btn btn-primary">Submit Your Band</a>
+        <a href="/submit/#submit-band" class="btn btn-outline">Update / Claim a Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="band-dir-toolbar">
+        <div class="band-dir-search">
+          <label class="form-label" for="band-search">Search</label>
+          <input class="form-input" type="search" id="band-search" placeholder="Band name or genre…" autocomplete="off">
+        </div>
+        <div class="band-dir-filters">
+          <div class="form-group">
+            <label class="form-label" for="band-genre-filter">Genre</label>
+            <select class="form-select" id="band-genre-filter">
+              <option value="">All genres</option>
+              <option value="ska">Ska</option>
+              <option value="rocksteady">Rocksteady</option>
+              <option value="2 tone">2 Tone</option>
+              <option value="ska-punk">Ska-Punk</option>
+              <option value="reggae">Reggae</option>
+              <option value="third wave">Third Wave</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="band-status-filter">Status</label>
+            <select class="form-select" id="band-status-filter">
+              <option value="">All statuses</option>
+              <option value="active">Active</option>
+              <option value="claimed">Claimed</option>
+              <option value="unverified">Unverified</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <p id="band-result-count" class="band-dir-count muted body-sm" aria-live="polite"></p>
+      <div id="band-directory-grid" class="band-dir-grid"></div>
+      <p class="band-dir-demo-note muted body-sm mt-24">Sample demo data — profiles marked unverified are placeholders for the directory prototype.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer platform-footer" role="contentinfo">
+  <div class="checker-strip checker-strip--bold" aria-hidden="true"></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">SKAZINE</a>
+        <p>Promote the music. Support the bands. Document the scene. Connect the people keeping the genre alive.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Directory</h5>
+        <ul>
+          <li><a href="/bands/">Bands</a></li>
+          <li><a href="/shows/">Shows</a></li>
+          <li><a href="/festivals/">Festivals</a></li>
+          <li><a href="/map/">Scene Map</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Community</h5>
+        <ul>
+          <li><a href="/radio/">Radio</a></li>
+          <li><a href="/writers/">Writers</a></li>
+          <li><a href="/cities/">Cities</a></li>
+          <li><a href="/playlists/">Playlists</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get Involved</h5>
+        <ul>
+          <li><a href="/submit/">Submit</a></li>
+          <li><a href="/partner/">Partner</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SKAZINE. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="/partner/">Privacy</a>
+        <a href="/partner/">Terms</a>
+        <a href="/submit/">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/platform.js"></script>
+<script src="/assets/js/bands.js"></script>
+</body>
+</html>

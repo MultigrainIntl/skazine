@@ -1,0 +1,38 @@
+[
+  {
+    "id": "great-ska-weekender",
+    "name": "The Great Ska Weekender",
+    "dates": "Jul 11–13, 2025",
+    "city": "Brighton",
+    "country": "UK",
+    "type": "Weekender",
+    "featured": true
+  },
+  {
+    "id": "skalopalooza",
+    "name": "Skalopalooza",
+    "dates": "TBD 2025",
+    "city": "United States",
+    "country": "US",
+    "type": "Festival",
+    "featured": true
+  },
+  {
+    "id": "rototom-sunsplash",
+    "name": "Rototom Sunsplash",
+    "dates": "Aug 2025",
+    "city": "Benicàssim",
+    "country": "ES",
+    "type": "Festival",
+    "featured": true
+  },
+  {
+    "id": "ska-wars",
+    "name": "Ska Wars",
+    "dates": "Sep 2025",
+    "city": "London",
+    "country": "UK",
+    "type": "Weekender",
+    "featured": false
+  }
+]

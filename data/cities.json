@@ -1,0 +1,56 @@
+[
+  {
+    "id": "denver",
+    "name": "Denver",
+    "region": "CO",
+    "slug": "denver",
+    "venues": 12,
+    "bands": 28,
+    "featured": true
+  },
+  {
+    "id": "los-angeles",
+    "name": "Los Angeles",
+    "region": "CA",
+    "slug": "los-angeles",
+    "venues": 34,
+    "bands": 52,
+    "featured": true
+  },
+  {
+    "id": "chicago",
+    "name": "Chicago",
+    "region": "IL",
+    "slug": "chicago",
+    "venues": 22,
+    "bands": 41,
+    "featured": true
+  },
+  {
+    "id": "london",
+    "name": "London",
+    "region": "UK",
+    "slug": "london",
+    "venues": 18,
+    "bands": 36,
+    "featured": false
+  },
+  {
+    "id": "new-york",
+    "name": "New York",
+    "region": "NY",
+    "slug": "new-york",
+    "venues": 26,
+    "bands": 44,
+    "featured": false
+  },
+  {
+    "id": "tokyo",
+    "name": "Tokyo",
+    "region": "JP",
+    "slug": "tokyo",
+    "venues": 9,
+    "bands": 15,
+    "featured": false
+  }
+]
